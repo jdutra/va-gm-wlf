@@ -132,7 +132,6 @@
         .status-badge.success { background: #10b981; color: white; }
         .status-badge.warning { background: #f59e0b; color: white; }
         .status-badge.danger { background: #ef4444; color: white; }
-        .status-badge.info { background: #3b82f6; color: white; }
         .benefit-list { list-style: none; padding: 0; margin: 20px 0; }
         .benefit-list li {
             padding: 15px 20px;
@@ -199,18 +198,6 @@
             border: 2px solid #667eea;
         }
         .roi-item .big-number { font-size: 2.2em; font-weight: bold; color: #10b981; margin: 8px 0; }
-        .visual-flow {
-            background: #1e293b;
-            color: #e2e8f0;
-            padding: 25px;
-            border-radius: 12px;
-            margin: 25px 0;
-            font-family: 'Courier New', monospace;
-            overflow-x: auto;
-            white-space: pre;
-            line-height: 1.6;
-            font-size: 0.82em;
-        }
         @media (max-width: 768px) {
             .nav-tabs { flex-direction: column; }
             .nav-tabs button { width: 100%; }
@@ -224,7 +211,7 @@
         <header>
             <h1>🚀 RELEX Workload Forecasting</h1>
             <div class="subtitle">Business Case Executivo - Grupo Mateus S.A.</div>
-            <div class="version-badge">v3.0 - Completo | Benchmarks 6%/10%</div>
+            <div class="version-badge">v3.0 Final - Benchmarks 6%/10%</div>
             <div style="margin-top: 15px; color: #999;">Outubro 2025 | VA-GM-WLF</div>
         </header>
 
@@ -242,13 +229,11 @@
 
         <!-- SEÇÃO 0: RESUMO -->
         <div class="content-section active">
+            <h2>📊 Resumo Executivo</h2>
             <div class="highlight-box">
-                <h2>💡 Decisão: APROVAÇÃO IMEDIATA</h2>
-                <p style="font-size: 1.15em; margin-top: 15px;">
-                    RELEX Workload Forecasting em <strong>276 lojas + 7 CDs</strong> do 3º maior varejista do Brasil.
-                </p>
+                <h3>Decisão: APROVAÇÃO IMEDIATA</h3>
+                <p>RELEX Workload Forecasting em 276 lojas + 7 CDs</p>
             </div>
-
             <div class="metrics-grid">
                 <div class="metric-card">
                     <div class="label">Economia 3 Anos</div>
@@ -256,1129 +241,142 @@
                     <div class="sublabel">Conservador (6%)</div>
                 </div>
                 <div class="metric-card">
-                    <div class="label">Economia 3 Anos</div>
-                    <div class="value">R$ 1,01B</div>
-                    <div class="sublabel">Otimista (10%)</div>
-                </div>
-                <div class="metric-card">
                     <div class="label">ROI Ano 1</div>
                     <div class="value">1.870%</div>
-                    <div class="sublabel">Conservador</div>
                 </div>
                 <div class="metric-card">
                     <div class="label">Payback</div>
                     <div class="value">15 dias</div>
-                    <div class="sublabel">2 semanas!</div>
                 </div>
             </div>
-
-            <div class="alert success">
-                <strong>⚡ Urgência:</strong>
-                Cada dia de atraso custa <strong>R$ 512-855 mil!</strong>
-            </div>
-
-            <h2>O Que É?</h2>
-            <p style="margin-bottom: 15px;">Sistema de IA que prevê TODA a carga de trabalho integrando:</p>
-            <div class="benefit-list">
-                <li>✅ Vendas e footfall | Entregas WMS | Reposição</li>
-                <li>✅ E-commerce | Eventos | Tarefas não-venda</li>
-                <li>✅ Absenteísmo previsto | Produtividade por setor</li>
-            </div>
-
-            <div class="alert warning">
-                <strong>⚠️ NÃO cria escalas automaticamente.</strong> Gerentes mantêm controle total, mas com dados precisos 90%+.
-            </div>
-
-            <button class="cta-button" onclick="showSection(8)">Ver Decisão Final →</button>
+            <button class="cta-button" onclick="showSection(8)">Ver Decisão →</button>
         </div>
 
         <!-- SEÇÃO 1: CONTEXTO -->
         <div class="content-section">
-            <h2>🏢 Grupo Mateus</h2>
+            <h2>🏢 Contexto: Grupo Mateus</h2>
             <div class="highlight-box">
                 <h3>3º Maior Varejista do Brasil</h3>
-                <p>Fundado em 1986 | 276 lojas | R$ 32,1 bi receita | Norte e Nordeste</p>
+                <p>276 lojas | R$ 32,1 bi receita | Norte/Nordeste</p>
             </div>
             <table class="comparison-table">
                 <tbody>
-                    <tr><td><strong>Lojas Q1 2025</strong></td><td>276 (92 atacarejo + 80 varejo + 104 eletro)</td></tr>
                     <tr><td><strong>Receita 2024</strong></td><td>R$ 32,1 bilhões (+19,8%)</td></tr>
                     <tr><td><strong>Lucro 2024</strong></td><td>R$ 1,35 bilhão (+12,7%)</td></tr>
-                    <tr><td><strong>EBITDA 2024</strong></td><td>R$ 2,49 bilhões (margem 7,8%)</td></tr>
-                    <tr><td><strong>Alavancagem</strong></td><td>0,29x (baixíssima - ótimo para investir)</td></tr>
+                    <tr><td><strong>Lojas</strong></td><td>276 unidades</td></tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- SEÇÃO 2: DORES COM DETALHES -->
+        <!-- SEÇÃO 2: DORES -->
         <div class="content-section">
-            <h2>❌ Dores do Processo Atual (Detalhado)</h2>
-            
+            <h2>❌ Dores Atuais</h2>
             <div class="highlight-box">
                 <h3>Planejamento 100% Manual</h3>
-                <p>Sem IA, sem automação, baseado em "intuição" dos gerentes.</p>
+                <p>R$ 248-306 milhões/ano em ineficiências</p>
             </div>
-
             <div class="timeline-item">
-                <h4>1. Tempo Gerencial Desperdiçado</h4>
-                <p><strong>Situação:</strong> Gerentes gastam 15-20h/semana criando escalas manualmente</p>
-                <p><strong>Cálculo da Perda:</strong></p>
-                <table class="comparison-table" style="margin-top: 10px;">
-                    <tbody>
-                        <tr><td>276 lojas × 17,5h/sem (média)</td><td>4.830 horas/semana</td></tr>
-                        <tr><td>4.830h × 52 semanas</td><td>251.160 horas/ano</td></tr>
-                        <tr><td>251.160h × R$ 85/hora (custo gerencial)</td><td><strong>R$ 21,3 milhões/ano</strong></td></tr>
-                        <tr><td>Custo de oportunidade (gerente focando em vendas/perdas)</td><td><strong>R$ 25-40 milhões/ano</strong></td></tr>
-                        <tr style="font-weight: bold; background: #fee2e2;">
-                            <td><strong>TOTAL DANO 1</strong></td>
-                            <td><strong>R$ 46-61 milhões/ano</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="timeline-item">
-                <h4>2. Horas Extras Não Planejadas</h4>
-                <p><strong>Situação:</strong> Subdimensionamento em dias de entrega/reposição gera horas extras emergenciais</p>
-                <p><strong>Cálculo da Perda:</strong></p>
-                <table class="comparison-table" style="margin-top: 10px;">
-                    <tbody>
-                        <tr><td>Taxa de horas extras atual (estimada)</td><td>5-7% da folha</td></tr>
-                        <tr><td>Folha de pessoal anual</td><td>R$ 3,12 bilhões</td></tr>
-                        <tr><td>Horas extras totais</td><td>R$ 156-218 milhões/ano</td></tr>
-                        <tr><td>% Evitável com forecast correto</td><td>55-60%</td></tr>
-                        <tr style="font-weight: bold; background: #fee2e2;">
-                            <td><strong>TOTAL DANO 2 (evitável)</strong></td>
-                            <td><strong>R$ 86-131 milhões/ano</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="timeline-item">
-                <h4>3. Ociosidade por Superdimensionamento</h4>
-                <p><strong>Situação:</strong> Excesso de pessoas em horários/dias calmos</p>
-                <p><strong>Cálculo da Perda:</strong></p>
-                <table class="comparison-table" style="margin-top: 10px;">
-                    <tbody>
-                        <tr><td>Horas ociosas estimadas por loja/semana</td><td>25-35 horas</td></tr>
-                        <tr><td>276 lojas × 30h/sem (média) × 52 semanas</td><td>430.560 horas/ano</td></tr>
-                        <tr><td>430.560h × R$ 30/hora (custo médio)</td><td><strong>R$ 12,9 milhões/ano</strong></td></tr>
-                        <tr><td>Custo de oportunidade (realocação para outras tarefas)</td><td><strong>R$ 35-65 milhões/ano</strong></td></tr>
-                        <tr style="font-weight: bold; background: #fee2e2;">
-                            <td><strong>TOTAL DANO 3</strong></td>
-                            <td><strong>R$ 48-78 milhões/ano</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="timeline-item">
-                <h4>4. Ausência de Métricas de Produtividade</h4>
-                <p><strong>Situação:</strong> 7/8 setores sem métricas (só caixas tem rudimentar)</p>
-                <p><strong>Cálculo da Perda:</strong></p>
-                <table class="comparison-table" style="margin-top: 10px;">
-                    <tbody>
-                        <tr><td>Setores sem métricas</td><td>Açougue, Padaria, Reposição, Fresh, Recebimento, Limpeza, E-commerce</td></tr>
-                        <tr><td>Ineficiência estimada por falta de medição</td><td>8-12% de produtividade perdida</td></tr>
-                        <tr><td>Base de custo desses setores (~60% da folha)</td><td>R$ 1,87 bilhões</td></tr>
-                        <tr><td>Perda de produtividade (10% média)</td><td><strong>R$ 187 milhões/ano</strong></td></tr>
-                        <tr><td>Capturável com métricas adequadas (15-20%)</td><td><strong>R$ 28-37 milhões/ano</strong></td></tr>
-                        <tr style="font-weight: bold; background: #fee2e2;">
-                            <td><strong>TOTAL DANO 4</strong></td>
-                            <td><strong>R$ 28-37 milhões/ano</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="timeline-item">
-                <h4>5. Absenteísmo Não Gerenciado</h4>
-                <p><strong>Situação:</strong> Faltas não previstas geram coberturas emergenciais</p>
-                <p><strong>Cálculo da Perda:</strong></p>
-                <table class="comparison-table" style="margin-top: 10px;">
-                    <tbody>
-                        <tr><td>Taxa de absenteísmo média (setor varejo Brasil)</td><td>6-8%</td></tr>
-                        <tr><td>~25.000 colaboradores × 7% absenteísmo</td><td>1.750 ausências/dia</td></tr>
-                        <tr><td>Custo de cobertura emergencial (30% premium)</td><td>R$ 45/hora vs R$ 30 normal</td></tr>
-                        <tr><td>1.750 ausências × 8h × R$ 15 premium × 250 dias</td><td><strong>R$ 52,5 milhões/ano</strong></td></tr>
-                        <tr><td>% Evitável com previsão (35-40%)</td><td><strong>R$ 18-21 milhões/ano</strong></td></tr>
-                        <tr style="font-weight: bold; background: #fee2e2;">
-                            <td><strong>TOTAL DANO 5</strong></td>
-                            <td><strong>R$ 18-21 milhões/ano</strong></td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h3>💰 Consolidação dos Custos das Ineficiências</h3>
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Dor</th>
-                        <th>Cálculo Base</th>
-                        <th>Custo Anual</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1. Tempo gerencial desperdiçado</td>
-                        <td>251k horas × R$ 85 + oportunidade</td>
-                        <td>R$ 46-61 milhões</td>
-                    </tr>
-                    <tr>
-                        <td>2. Horas extras evitáveis</td>
-                        <td>55-60% de R$ 156-218M extras</td>
-                        <td>R$ 86-131 milhões</td>
-                    </tr>
-                    <tr>
-                        <td>3. Ociosidade</td>
-                        <td>431k horas × R$ 30 + oportunidade</td>
-                        <td>R$ 48-78 milhões</td>
-                    </tr>
-                    <tr>
-                        <td>4. Sem métricas (ineficiência)</td>
-                        <td>15-20% de R$ 187M perda produtividade</td>
-                        <td>R$ 28-37 milhões</td>
-                    </tr>
-                    <tr>
-                        <td>5. Absenteísmo não gerenciado</td>
-                        <td>35-40% de R$ 52,5M coberturas</td>
-                        <td>R$ 18-21 milhões</td>
-                    </tr>
-                    <tr style="font-weight: bold; background: #fee2e2;">
-                        <td colspan="2"><strong>TOTAL DAS INEFICIÊNCIAS</strong></td>
-                        <td><strong>R$ 226-328 milhões/ano</strong></td>
-                    </tr>
-                    <tr style="font-weight: bold; background: #fef3c7;">
-                        <td colspan="2"><strong>POTENCIAL CAPTURA (60-95%)</strong></td>
-                        <td><strong>R$ 187-312 milhões/ano</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="alert danger">
-                <strong>🚨 Custo Diário:</strong>
-                <ul>
-                    <li>Conservador (6%): <strong>R$ 512.000/dia</strong> desperdiçados</li>
-                    <li>Otimista (10%): <strong>R$ 855.000/dia</strong> desperdiçados</li>
-                    <li>Por semana: <strong>R$ 3,6-6,0 milhões</strong></li>
-                    <li>Por mês: <strong>R$ 15,6-26,0 milhões</strong></li>
-                </ul>
+                <h4>Principais Dores</h4>
+                <p>• Tempo gerencial: R$ 46-61M/ano</p>
+                <p>• Horas extras: R$ 108M/ano</p>
+                <p>• Ociosidade: R$ 48-78M/ano</p>
             </div>
         </div>
 
-        <!-- SEÇÃO 2: CONTEXTO (já estava OK) -->
+        <!-- SEÇÃO 3: SOLUÇÃO -->
         <div class="content-section">
-            <h2>🏢 Contexto Grupo Mateus</h2>
-            <div class="highlight-box">
-                <h3>3º Maior Varejista do Brasil</h3>
-                <p>Fundado em 1986 por Ilson Mateus em Balsas (MA), hoje opera em 8 estados do Norte/Nordeste.</p>
-            </div>
-            <table class="comparison-table">
-                <tbody>
-                    <tr><td><strong>Total Lojas (Q1 2025)</strong></td><td>276 unidades</td></tr>
-                    <tr><td><strong>Centros de Distribuição</strong></td><td>7 CDs + frota própria</td></tr>
-                    <tr><td><strong>Colaboradores (est.)</strong></td><td>~25.000 pessoas</td></tr>
-                    <tr><td><strong>Receita Líquida 2024</strong></td><td>R$ 32,1 bilhões (+19,8%)</td></tr>
-                    <tr><td><strong>Lucro Líquido 2024</strong></td><td>R$ 1,35 bilhão (+12,7%)</td></tr>
-                    <tr><td><strong>EBITDA 2024</strong></td><td>R$ 2,49 bilhões (margem 7,8%)</td></tr>
-                    <tr><td><strong>SSS 2024</strong></td><td>6,9% (crescimento orgânico)</td></tr>
-                    <tr><td><strong>Alavancagem</strong></td><td>0,29x (excelente capacidade de investimento)</td></tr>
-                </tbody>
-            </table>
-
-            <h3>Estrutura de Negócios</h3>
-            <table class="comparison-table">
-                <thead>
-                    <tr><th>Segmento</th><th>Bandeira</th><th>Unidades</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Atacarejo</td><td>Mix Atacarejo</td><td>92 lojas</td></tr>
-                    <tr><td>Varejo</td><td>Mateus Supermercados</td><td>80 lojas</td></tr>
-                    <tr><td>Eletro</td><td>Eletro Mateus</td><td>104 lojas</td></tr>
-                    <tr><td>Atacado</td><td>Armazém Mateus</td><td>Integrado</td></tr>
-                    <tr><td>Panificação</td><td>Bumba Meu Pão</td><td>Em lojas</td></tr>
-                    <tr><td>E-commerce</td><td>Mateus Mais</td><td>Digital</td></tr>
-                    <tr><td>Crédito</td><td>MateusCard, Crednosso</td><td>Serviços</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- SEÇÃO 3: SOLUÇÃO DETALHADA -->
-        <div class="content-section">
-            <h2>✅ Solução RELEX (Detalhada)</h2>
-            
+            <h2>✅ Solução RELEX</h2>
             <div class="highlight-box">
                 <h3>Workload Forecasting com IA</h3>
-                <p style="font-size: 1.1em;">Sistema que integra <strong>9+ drivers</strong> para prever carga de trabalho com <strong>90%+ precisão</strong> (vs 50-60% atual).</p>
+                <p>Precisão 90%+ | 9+ drivers integrados</p>
             </div>
-
-            <h3>🎯 Comparação: Hoje vs Com RELEX</h3>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 30px 0;">
-                <div style="background: #fee2e2; padding: 25px; border-radius: 12px; border: 3px solid #ef4444;">
-                    <h4 style="color: #991b1b; text-align: center; margin-bottom: 20px;">❌ HOJE (Míope)</h4>
-                    <div style="background: white; padding: 18px; border-radius: 8px; margin: 12px 0;">
-                        <div style="font-weight: bold; color: #ef4444; margin-bottom: 8px;">Único Driver:</div>
-                        <div style="font-size: 0.9em;">📊 Vendas históricas (POS)</div>
-                    </div>
-                    <div style="background: white; padding: 18px; border-radius: 8px; margin: 12px 0;">
-                        <div style="font-weight: bold; color: #ef4444; margin-bottom: 8px;">Método:</div>
-                        <div style="font-size: 0.9em;">🤷 "Feeling" do gerente<br>⏰ 15-20h/semana trabalho manual</div>
-                    </div>
-                    <div style="background: white; padding: 18px; border-radius: 8px; margin: 12px 0; text-align: center;">
-                        <div style="font-weight: bold; color: #ef4444; margin-bottom: 8px;">Precisão:</div>
-                        <div style="font-size: 2.5em; color: #ef4444;">50-60%</div>
-                    </div>
-                    <div style="background: white; padding: 18px; border-radius: 8px;">
-                        <div style="font-weight: bold; color: #ef4444; margin-bottom: 8px;">Resultado:</div>
-                        <div style="font-size: 0.88em;">
-                            ❌ R$ 86-131M extras/ano<br>
-                            ❌ R$ 48-78M ociosidade/ano<br>
-                            ❌ 7/8 setores sem métricas<br>
-                            ❌ Absenteísmo ignorado<br>
-                            ❌ Entreg as surpresa
-                        </div>
-                    </div>
-                </div>
-                
-                <div style="background: #d1fae5; padding: 25px; border-radius: 12px; border: 3px solid #10b981;">
-                    <h4 style="color: #065f46; text-align: center; margin-bottom: 20px;">✅ COM RELEX (360°)</h4>
-                    <div style="background: white; padding: 18px; border-radius: 8px; margin: 12px 0;">
-                        <div style="font-weight: bold; color: #10b981; margin-bottom: 8px;">9+ Drivers Integrados:</div>
-                        <div style="font-size: 0.85em;">
-                            ✅ Vendas + Footfall<br>
-                            ✅ WMS (recebimento CDs/lojas)<br>
-                            ✅ Níveis estoque (reposição)<br>
-                            ✅ E-commerce (pedidos)<br>
-                            ✅ Eventos locais<br>
-                            ✅ Tarefas não-venda<br>
-                            ✅ Sazonalidade<br>
-                            ✅ Absenteísmo previsto<br>
-                            ✅ Produtividade por setor
-                        </div>
-                    </div>
-                    <div style="background: white; padding: 18px; border-radius: 8px; margin: 12px 0;">
-                        <div style="font-weight: bold; color: #10b981; margin-bottom: 8px;">Método:</div>
-                        <div style="font-size: 0.9em;">🤖 IA Machine Learning<br>⏰ 4h/semana (só ajustes finos)</div>
-                    </div>
-                    <div style="background: white; padding: 18px; border-radius: 8px; margin: 12px 0; text-align: center;">
-                        <div style="font-weight: bold; color: #10b981; margin-bottom: 8px;">Precisão:</div>
-                        <div style="font-size: 2.5em; color: #10b981;">90-95%</div>
-                    </div>
-                    <div style="background: white; padding: 18px; border-radius: 8px;">
-                        <div style="font-weight: bold; color: #10b981; margin-bottom: 8px;">Resultado:</div>
-                        <div style="font-size: 0.88em;">
-                            ✅ R$ 187-312M economia<br>
-                            ✅ ROI 1.870-3.120%<br>
-                            ✅ 8/8 setores com métricas<br>
-                            ✅ Absenteísmo previsto<br>
-                            ✅ Entregas planejadas
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h3>🏗️ Como RELEX Funciona</h3>
-            <div class="visual-flow">
-┌──────────────────────────────────────────────────────────────┐
-│              RELEX WORKLOAD FORECASTING                      │
-├──────────────────────────────────────────────────────────────┤
-│                                                               │
-│  CAMADA 1: INTEGRAÇÃO DE DADOS (Real-time)                  │
-│  ┌──────────────────────────────────────────────────────────┐│
-│  │ 📊 VENDAS & TRÁFEGO    📦 SUPPLY CHAIN                  ││
-│  │ • POS 24m+ histórico   • WMS recebimento CDs/lojas      ││
-│  │ • Footfall contadores  • Entregas programadas           ││
-│  │ • Por categoria        • Níveis estoque                 ││
-│  │                                                           ││
-│  │ 🛒 E-COMMERCE          📅 CONTEXTO                      ││
-│  │ • Pedidos confirmados  • Feriados/eventos               ││
-│  │ • Status separação     • Clima (APIs)                   ││
-│  │ • Tempo picking        • Promoções                      ││
-│  │                                                           ││
-│  │ 👥 PESSOAS             📊 PERFORMANCE                   ││
-│  │ • Absenteísmo histórico• Metas por setor               ││
-│  │ • Por loja/setor       • Drivers específicos            ││
-│  │ • Padrões (ML)         • Performance real               ││
-│  └──────────────────────────────────────────────────────────┘│
-│                              ↓                                 │
-│  CAMADA 2: AI/ML ENGINE                                       │
-│  ┌──────────────────────────────────────────────────────────┐│
-│  │ 🧠 100+ algoritmos ML testados por cenário              ││
-│  │ 🎯 Seleção automática do melhor algoritmo               ││
-│  │ 📈 Análise correlação entre drivers                     ││
-│  │ 👥 Ajuste automático por absenteísmo previsto          ││
-│  │ 📊 Calibração por produtividade alvo                   ││
-│  │ 🔄 Self-learning contínuo (melhora com uso)            ││
-│  │ ✅ Precisão: 90-95% (4 sem) | 85-90% (26 sem)         ││
-│  └──────────────────────────────────────────────────────────┘│
-│                              ↓                                 │
-│  CAMADA 3: WORKLOAD FORECAST                                  │
-│  ┌──────────────────────────────────────────────────────────┐│
-│  │ Previsão granular:                                       ││
-│  │ • Por loja (276 individualizadas)                        ││
-│  │ • Por dia (hoje + 182 dias futuro)                       ││
-│  │ • Por intervalo (15 minutos)                             ││
-│  │ • Por tarefa (caixa, reposição, fresh, etc)             ││
-│  │ • Ajustado por absenteísmo previsto                     ││
-│  │ • Calibrado por produtividade alvo                      ││
-│  └──────────────────────────────────────────────────────────┘│
-│                              ↓                                 │
-│  CAMADA 4: DASHBOARD                                          │
-│  ┌──────────────────────────────────────────────────────────┐│
-│  │ 👔 Gerentes Loja: Visão 4 sem, alertas, recomendações  ││
-│  │ 📱 Regionais: Consolidado, benchmarking, planejamento   ││
-│  │ 📊 Diretoria: KPIs, ROI, tendências                    ││
-│  └──────────────────────────────────────────────────────────┘│
-│                              ↓                                 │
-│            ✍️ GERENTE CRIA ESCALA MANUAL                      │
-│              (com dados precisos 90%+)                        │
-└──────────────────────────────────────────────────────────────┘
-            </div>
-
-            <h3>Como RELEX Ajuda os Clientes</h3>
-            
-            <div class="timeline-item">
-                <h4>🎯 Redução de Custos com Pessoal</h4>
-                <p><strong>Como RELEX ajuda:</strong></p>
-                <div class="benefit-list">
-                    <li><strong>Elimina horas extras desnecessárias:</strong> Previsão precisa de picos evita subdimensionamento (-45%)</li>
-                    <li><strong>Reduz ociosidade:</strong> Identifica vales de demanda, evita superdimensionamento (-35%)</li>
-                    <li><strong>Otimiza temporários:</strong> Contrata quantidade certa, nos momentos certos (Black Friday, Natal)</li>
-                    <li><strong>Melhora alocação:</strong> Pessoas certas, tarefas certas, horários certos</li>
-                </div>
-                <p style="margin-top: 15px;"><strong>Resultado Cliente:</strong> <span class="status-badge success">6-10% redução custos pessoal</span></p>
-            </div>
-
-            <div class="timeline-item">
-                <h4>📊 Visibilidade e Controle</h4>
-                <p><strong>Como RELEX ajuda:</strong></p>
-                <div class="benefit-list">
-                    <li><strong>Dashboard em tempo real:</strong> Vê workload de hoje + próximas 26 semanas</li>
-                    <li><strong>Alertas proativos:</strong> Aviso 4-26 semanas antes de picos críticos</li>
-                    <li><strong>Comparação real vs previsto:</strong> Mede acurácia, aprende com desvios</li>
-                    <li><strong>Benchmarking entre lojas:</strong> Identifica best practices e oportunidades</li>
-                </div>
-                <p style="margin-top: 15px;"><strong>Resultado Cliente:</strong> <span class="status-badge success">Planejamento proativo vs reativo</span></p>
-            </div>
-
-            <div class="timeline-item">
-                <h4>👥 Gestão de Absenteísmo Inteligente</h4>
-                <p><strong>Como RELEX ajuda:</strong></p>
-                <div class="benefit-list">
-                    <li><strong>Prevê faltas:</strong> ML identifica padrões (segundas, pós-feriados, sazonalidade)</li>
-                    <li><strong>Ajusta escalas automaticamente:</strong> Se prevê 8% faltas, adiciona 8% ao workload</li>
-                    <li><strong>Alertas de anomalias:</strong> Absenteísmo > 10% dispara investigação RH</li>
-                    <li><strong>Planejamento de cobertura:</strong> Dimensiona suplentes corretamente</li>
-                </div>
-                <p style="margin-top: 15px;"><strong>Resultado Cliente:</strong> <span class="status-badge success">Escalas realistas, sem surpresas</span></p>
-            </div>
-
-            <div class="timeline-item">
-                <h4>📈 Métricas de Produtividade</h4>
-                <p><strong>Como RELEX ajuda:</strong></p>
-                <div class="benefit-list">
-                    <li><strong>Define drivers por setor:</strong> Açougue (kg/h), Padaria (unid/h), Reposição (itens/h), Caixas (cupons/h)</li>
-                    <li><strong>Mede performance real:</strong> Compara real vs meta, gera rankings</li>
-                    <li><strong>Identifica gaps:</strong> Alerta quando >15% abaixo da meta</li>
-                    <li><strong>Sugere ações:</strong> Treinamento, redistribuição, revisão de processos</li>
-                </div>
-                <p style="margin-top: 15px;"><strong>Resultado Cliente:</strong> <span class="status-badge success">Melhoria contínua orientada por dados</span></p>
-            </div>
-
-            <div class="timeline-item">
-                <h4>🚀 Suporte à Expansão</h4>
-                <p><strong>Como RELEX ajuda:</strong></p>
-                <div class="benefit-list">
-                    <li><strong>Novas lojas otimizadas desde dia 1:</strong> Templates prontos, forecast desde abertura</li>
-                    <li><strong>Ramp-up 3x mais rápido:</strong> 1-2 meses vs 4-6 meses atual</li>
-                    <li><strong>Planejamento de aberturas:</strong> Simula workload antes de abrir, dimensiona equipe correta</li>
-                    <li><strong>Fusões/aquisições:</strong> Integração suave de lojas adquiridas</li>
-                </div>
-                <p style="margin-top: 15px;"><strong>Resultado Cliente:</strong> <span class="status-badge success">Expansão sem perda de eficiência</span></p>
-            </div>
-
-            <div class="timeline-item">
-                <h4>💼 Libera Tempo Gerencial</h4>
-                <p><strong>Como RELEX ajuda:</strong></p>
-                <div class="benefit-list">
-                    <li><strong>Automatiza 80% do planejamento:</strong> IA gera previsões em segundos</li>
-                    <li><strong>Gerente foca em gestão:</strong> +12-16h/sem para coaching, vendas, perdas, experiência cliente</li>
-                    <li><strong>Decisões mais rápidas:</strong> Dados prontos vs horas de análise manual</li>
-                    <li><strong>Reduz stress:</strong> Menos "apagar incêndios", mais gestão estratégica</li>
-                </div>
-                <p style="margin-top: 15px;"><strong>Resultado Cliente:</strong> <span class="status-badge success">Gerentes focam no que importa</span></p>
-            </div>
-
-            <h3>🔄 Fluxo de Trabalho Transformado</h3>
-            <div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 30px; border-radius: 12px; margin: 25px 0;">
-                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
-                    <div style="text-align: center; flex: 1; min-width: 130px;">
-                        <div style="background: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 1.8em; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">📊</div>
-                        <div style="font-weight: bold; margin-bottom: 5px; font-size: 0.88em;">Seg 09h</div>
-                        <div style="font-size: 0.8em; color: #666;">RELEX gera forecast</div>
-                    </div>
-                    <div style="font-size: 1.4em; color: #667eea;">→</div>
-                    <div style="text-align: center; flex: 1; min-width: 130px;">
-                        <div style="background: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 1.8em; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">👀</div>
-                        <div style="font-weight: bold; margin-bottom: 5px; font-size: 0.88em;">Seg 09h15</div>
-                        <div style="font-size: 0.8em; color: #666;">Revisa dashboard</div>
-                    </div>
-                    <div style="font-size: 1.4em; color: #667eea;">→</div>
-                    <div style="text-align: center; flex: 1; min-width: 130px;">
-                        <div style="background: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 1.8em; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">✍️</div>
-                        <div style="font-weight: bold; margin-bottom: 5px; font-size: 0.88em;">Seg 10h30</div>
-                        <div style="font-size: 0.8em; color: #666;">Cria escalas</div>
-                    </div>
-                    <div style="font-size: 1.4em; color: #667eea;">→</div>
-                    <div style="text-align: center; flex: 1; min-width: 130px;">
-                        <div style="background: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 1.8em; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">✅</div>
-                        <div style="font-weight: bold; margin-bottom: 5px; font-size: 0.88em;">Semana toda</div>
-                        <div style="font-size: 0.8em; color: #666;">Operação eficiente</div>
-                    </div>
-                </div>
-                <div style="text-align: center; margin-top: 20px; padding-top: 15px; border-top: 2px solid rgba(102,126,234,0.3);">
-                    <div style="font-size: 1.05em; font-weight: bold; color: #667eea;">
-                        ⏰ Tempo: 1,5h vs 15-20h | 🎯 Precisão: 90%+ vs 50-60%
-                    </div>
-                </div>
-            </div>
-
-            <h3>💡 Diferenciais da Solução</h3>
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <div style="font-size: 2em;">🎯</div>
-                    <div class="label">Precisão Forecast</div>
-                    <div class="value">90%+</div>
-                    <div class="sublabel">vs 50-60% atual</div>
-                </div>
-                <div class="metric-card">
-                    <div style="font-size: 2em;">⚡</div>
-                    <div class="label">Economia Tempo</div>
-                    <div class="value">-80%</div>
-                    <div class="sublabel">4h vs 15-20h/sem</div>
-                </div>
-                <div class="metric-card">
-                    <div style="font-size: 2em;">📊</div>
-                    <div class="label">Setores c/ Métricas</div>
-                    <div class="value">8/8</div>
-                    <div class="sublabel">vs 1/8 hoje</div>
-                </div>
-                <div class="metric-card">
-                    <div style="font-size: 2em;">🔮</div>
-                    <div class="label">Horizonte</div>
-                    <div class="value">26 sem</div>
-                    <div class="sublabel">6 meses futuro</div>
-                </div>
-            </div>
-
-            <div class="alert info">
-                <strong>✅ Escopo Claro:</strong> RELEX fornece <strong>previsões inteligentes</strong> de workload. Gerentes mantêm <strong>autonomia total</strong> sobre criação de escalas.
+            <div class="benefit-list">
+                <li><strong>Previsão unificada:</strong> Vendas, WMS, E-commerce, Absenteísmo</li>
+                <li><strong>Automatiza 80%:</strong> 4h vs 15-20h/sem</li>
+                <li><strong>Métricas completas:</strong> 8/8 setores vs 1/8</li>
             </div>
         </div>
 
-        <!-- SEÇÃO 4: FINANCEIRO DETALHADO -->
+        <!-- SEÇÃO 4: FINANCEIRO -->
         <div class="content-section">
-            <h2>💰 Impacto Financeiro (Detalhado)</h2>
-            
+            <h2>💰 Impacto Financeiro</h2>
             <div class="highlight-box">
-                <h3>Metodologia de Cálculo</h3>
-                <p><strong>Base:</strong> Despesas operacionais 2024: R$ 4,8 bilhões<br>
-                <strong>Estimativa pessoal:</strong> 65% = R$ 3,12 bilhões<br>
-                <strong>Benchmarks:</strong> Coop Värmland (6-10%) | Clientes RELEX grocery<br>
-                <strong>Conservador:</strong> 6% | <strong>Otimista:</strong> 10%</p>
+                <h3>ROI Excepcional</h3>
+                <p>1.870-3.120% Ano 1 | Payback 15 dias</p>
             </div>
-
-            <h3>💵 Detalhamento Ano 1 - Conservador (6%)</h3>
             <table class="comparison-table">
                 <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th>Cálculo</th>
-                        <th>Valor</th>
-                        <th>%</th>
-                    </tr>
+                    <tr><th>Ano</th><th>Invest.</th><th>Benef. 6%</th><th>ROI</th></tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><strong>Base de Pessoal</strong></td>
-                        <td>65% × R$ 4,8B desp. oper.</td>
-                        <td>R$ 3,12 bi</td>
-                        <td>-</td>
-                    </tr>
+                    <tr><td>Ano 1</td><td>R$ 10M</td><td>R$ 187M</td><td><span class="status-badge success">1.870%</span></td></tr>
+                    <tr><td>Ano 2</td><td>R$ 2M</td><td>R$ 202M</td><td><span class="status-badge success">10.100%</span></td></tr>
+                    <tr><td>Ano 3</td><td>R$ 2M</td><td>R$ 218M</td><td><span class="status-badge success">10.900%</span></td></tr>
                     <tr style="background: #d1fae5; font-weight: bold;">
-                        <td><strong>Redução Total (6%)</strong></td>
-                        <td>R$ 3,12B × 6%</td>
-                        <td><strong>R$ 187 milhões</strong></td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 25px;">→ Eliminação horas extras</td>
-                        <td>45% do total</td>
-                        <td>R$ 84 milhões</td>
-                        <td>45%</td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 25px;">→ Redução ociosidade</td>
-                        <td>30% do total</td>
-                        <td>R$ 56 milhões</td>
-                        <td>30%</td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 25px;">→ Melhor dimensionamento</td>
-                        <td>15% do total</td>
-                        <td>R$ 28 milhões</td>
-                        <td>15%</td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 25px;">→ Otimização temporários</td>
-                        <td>10% do total</td>
-                        <td>R$ 19 milhões</td>
-                        <td>10%</td>
+                        <td>TOTAL</td><td>R$ 14M</td><td>R$ 607M</td><td><span class="status-badge success">4.336%</span></td>
                     </tr>
                 </tbody>
             </table>
-
-            <h3>💵 Detalhamento Ano 1 - Otimista (10%)</h3>
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th>Cálculo</th>
-                        <th>Valor</th>
-                        <th>%</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="background: #d1fae5; font-weight: bold;">
-                        <td><strong>Redução Total (10%)</strong></td>
-                        <td>R$ 3,12B × 10%</td>
-                        <td><strong>R$ 312 milhões</strong></td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 25px;">→ Eliminação horas extras</td>
-                        <td>45% do total</td>
-                        <td>R$ 140 milhões</td>
-                        <td>45%</td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 25px;">→ Redução ociosidade</td>
-                        <td>30% do total</td>
-                        <td>R$ 94 milhões</td>
-                        <td>30%</td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 25px;">→ Melhor dimensionamento</td>
-                        <td>15% do total</td>
-                        <td>R$ 47 milhões</td>
-                        <td>15%</td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 25px;">→ Otimização temporários</td>
-                        <td>10% do total</td>
-                        <td>R$ 31 milhões</td>
-                        <td>10%</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>📊 Consolidação 3 Anos</h3>
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Ano</th>
-                        <th>Investimento</th>
-                        <th>Benefícios 6%</th>
-                        <th>Benefícios 10%</th>
-                        <th>Líquido 6%</th>
-                        <th>ROI 6%</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Ano 1</strong></td>
-                        <td>R$ 10 M</td>
-                        <td>R$ 187 M</td>
-                        <td>R$ 312 M</td>
-                        <td>R$ 177 M</td>
-                        <td><span class="status-badge success">1.870%</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Ano 2</strong></td>
-                        <td>R$ 2 M</td>
-                        <td>R$ 202 M</td>
-                        <td>R$ 337 M</td>
-                        <td>R$ 200 M</td>
-                        <td><span class="status-badge success">10.100%</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Ano 3</strong></td>
-                        <td>R$ 2 M</td>
-                        <td>R$ 218 M</td>
-                        <td>R$ 364 M</td>
-                        <td>R$ 216 M</td>
-                        <td><span class="status-badge success">10.900%</span></td>
-                    </tr>
-                    <tr style="font-weight: bold; background: #d1fae5;">
-                        <td><strong>TOTAL 3 ANOS</strong></td>
-                        <td>R$ 14 M</td>
-                        <td>R$ 607 M</td>
-                        <td>R$ 1,01 B</td>
-                        <td>R$ 593 M</td>
-                        <td><span class="status-badge success">4.336%</span></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>📈 Análise de Payback</h3>
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <div class="label">Conservador (6%)</div>
-                    <div class="value">15 dias</div>
-                    <div class="sublabel">Invest: R$ 10M | Econ: R$ 15,6M/mês</div>
-                    <div style="margin-top: 10px; font-size: 0.85em;">Payback = R$ 10M ÷ (R$ 187M/12) = 0,64 meses</div>
-                </div>
-                <div class="metric-card">
-                    <div class="label">Otimista (10%)</div>
-                    <div class="value">11 dias</div>
-                    <div class="sublabel">Invest: R$ 10M | Econ: R$ 26M/mês</div>
-                    <div style="margin-top: 10px; font-size: 0.85em;">Payback = R$ 10M ÷ (R$ 312M/12) = 0,38 meses</div>
-                </div>
-            </div>
-
-            <h3>💎 VPL e TIR (WACC 12%, 5 anos)</h3>
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Métrica Financeira</th>
-                        <th>Conservador (6%)</th>
-                        <th>Otimista (10%)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>VPL (Valor Presente Líquido)</strong></td>
-                        <td>R$ 822 milhões</td>
-                        <td>R$ 1,37 bilhão</td>
-                    </tr>
-                    <tr>
-                        <td><strong>TIR (Taxa Interna de Retorno)</strong></td>
-                        <td>1.847%</td>
-                        <td>3.078%</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Benefício Líquido 3 anos</strong></td>
-                        <td>R$ 593 milhões</td>
-                        <td>R$ 999 milhões</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Payback Period</strong></td>
-                        <td>15 dias (0,5 meses)</td>
-                        <td>11 dias (0,4 meses)</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="alert success">
-                <strong>✨ Custo da Inação (por período):</strong>
-                <ul>
-                    <li><strong>Por dia:</strong> R$ 512k (6%) ou R$ 855k (10%)</li>
-                    <li><strong>Por semana:</strong> R$ 3,6M (6%) ou R$ 6,0M (10%)</li>
-                    <li><strong>Por mês:</strong> R$ 15,6M (6%) ou R$ 26,0M (10%)</li>
-                    <li><strong>Por trimestre:</strong> R$ 46,8M (6%) ou R$ 78,0M (10%)</li>
-                </ul>
-            </div>
         </div>
 
-        <!-- SEÇÃO 5: REQUISITOS DETALHADOS -->
+        <!-- SEÇÃO 5: REQUISITOS -->
         <div class="content-section">
-            <h2>📋 Requisitos Específicos do Grupo Mateus</h2>
-            
+            <h2>📋 Requisitos Específicos</h2>
             <div class="highlight-box">
-                <h3>Atendimento Completo aos Requisitos</h3>
-                <p>RELEX foi desenhado para atender <strong>exatamente</strong> as necessidades identificadas no processo atual do Grupo Mateus.</p>
+                <h3>Atendimento Completo</h3>
+                <p>RELEX atende 100% dos requisitos mapeados</p>
             </div>
-
-            <h3>📊 REQUISITO 1: Gestão de Absenteísmo</h3>
-            
-            <div class="timeline-item">
-                <h4>🎯 Necessidade Mapeada</h4>
-                <div class="benefit-list">
-                    <li>✅ Receber dados por loja e setor</li>
-                    <li>✅ Calcular percentuais históricos</li>
-                    <li>✅ Prever faltas futuras</li>
-                    <li>✅ Análise granular por atividade</li>
-                    <li>✅ Alertas quando ultrapassar limites</li>
-                    <li>✅ Auxiliar ações corretivas</li>
-                </div>
+            <h3>Requisito 1: Absenteísmo</h3>
+            <div class="benefit-list">
+                <li><strong>Previsão automática:</strong> 85%+ precisão</li>
+                <li><strong>Alertas:</strong> Quando > limites</li>
+                <li><strong>Ajuste automático:</strong> Workload considera faltas</li>
             </div>
-
-            <div class="timeline-item">
-                <h4>✅ Como RELEX Resolve</h4>
-                
-                <p style="margin-bottom: 15px;"><strong>1. Ingestão de Dados de Absenteísmo:</strong></p>
-                <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-                    <strong>Fonte:</strong> Sistema de ponto eletrônico / RH<br>
-                    <strong>Granularidade:</strong> Por loja, setor, atividade, colaborador, data<br>
-                    <strong>Histórico:</strong> Mínimo 12 meses, ideal 24+ meses<br>
-                    <strong>Atualização:</strong> Diária via API
-                </div>
-
-                <p style="margin-bottom: 15px;"><strong>2. Análise e Identificação de Padrões:</strong></p>
-                <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-                    <strong>Machine Learning identifica:</strong><br>
-                    • Dias da semana com maior absenteísmo (ex: segundas 12%)<br>
-                    • Sazonalidade (ex: junho/dezembro +30%)<br>
-                    • Pós-feriados (ex: +25%)<br>
-                    • Por setor (ex: açougue 8%, caixas 5%)<br>
-                    • Tendências ao longo do ano
-                </div>
-
-                <p style="margin-bottom: 15px;"><strong>3. Previsão de Faltas Futuras:</strong></p>
-                <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-                    <strong>Algoritmo prevê:</strong> Taxa de absenteísmo para próximas 4-26 semanas<br>
-                    <strong>Precisão:</strong> 85-90%<br>
-                    <strong>Exemplo:</strong> "Segunda 15/Jan - Açougue Fortaleza: 8,5% faltas previstas (vs 7% média)"
-                </div>
-
-                <p style="margin-bottom: 15px;"><strong>4. Ajuste Automático de Workload:</strong></p>
-                <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-                    <strong>Cálculo integrado:</strong><br>
-                    Workload base = 100 horas<br>
-                    Absenteísmo previsto = 8%<br>
-                    <strong>Workload ajustado = 108 horas</strong><br>
-                    Recomendação: escalar 14 pessoas (vs 13 sem ajuste)
-                </div>
-
-                <p style="margin-bottom: 15px;"><strong>5. Alertas e Ações:</strong></p>
-                <div style="background: white; padding: 15px; border-radius: 8px;">
-                    <strong>Dashboard gera alertas quando:</strong><br>
-                    🔴 Absenteísmo > 10% (crítico)<br>
-                    🟡 Absenteísmo > 8% (atenção)<br>
-                    <strong>Ações sugeridas:</strong> Investigar causas, contratar cobertura, redistribuir tarefas
-                </div>
-
-                <p style="margin-top: 15px; padding: 15px; background: #d1fae5; border-radius: 8px;"><strong>💰 Impacto:</strong> Evita R$ 18-21 milhões/ano em coberturas emergenciais + Melhora clima organizacional</p>
-            </div>
-
-            <h3>📊 REQUISITO 2: Eficiência de Cada Time</h3>
-            
-            <div class="timeline-item">
-                <h4>🎯 Necessidade Mapeada</h4>
-                <div class="benefit-list">
-                    <li>✅ Parametrizar metas de produtividade</li>
-                    <li>✅ Definir drivers específicos por área</li>
-                    <li>✅ Comparar real vs meta</li>
-                    <li>✅ Gerar alertas de desvios</li>
-                    <li>✅ Sugerir ações corretivas</li>
-                    <li>✅ Flexibilidade por loja/setor</li>
-                    <li>✅ Visualização em dashboards</li>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <h4>✅ Como RELEX Resolve</h4>
-                
-                <p style="margin-bottom: 15px;"><strong>1. Configuração de Metas por Setor:</strong></p>
-                <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-                    <strong>Exemplos de metas configuráveis:</strong><br>
-                    • <strong>Açougue:</strong> 15 kg processados/hora/pessoa<br>
-                    • <strong>Padaria:</strong> 120 unidades/hora/pessoa<br>
-                    • <strong>Reposição:</strong> 45 itens/hora/pessoa<br>
-                    • <strong>Caixas:</strong> 28 cupons/hora/caixa<br>
-                    • <strong>Picking (e-commerce):</strong> 12 minutos/pedido<br>
-                    • <strong>Recebimento:</strong> 25 minutos/pallet
-                </div>
-
-                <p style="margin-bottom: 15px;"><strong>2. Medição de Performance Real:</strong></p>
-                <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-                    <strong>Sistema captura automaticamente:</strong><br>
-                    • Volume real processado (kg vendidos, itens repostos, etc.)<br>
-                    • Horas trabalhadas por função<br>
-                    • Calcula: Produtividade real = Volume ÷ Horas<br>
-                    • Compara: Real vs Meta = Desvio %
-                </div>
-
-                <p style="margin-bottom: 15px;"><strong>3. Dashboard de Produtividade:</strong></p>
-                <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-                    <strong>Visualizações:</strong><br>
-                    📊 Gráfico de tendência (últimas 12 semanas)<br>
-                    🏆 Ranking entre lojas (benchmark)<br>
-                    🎯 Desvio % por setor<br>
-                    📈 Evolução ao longo do tempo<br>
-                    🗺️ Heatmap de performance
-                </div>
-
-                <p style="margin-bottom: 15px;"><strong>4. Alertas Inteligentes:</strong></p>
-                <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-                    🔴 <strong>Crítico:</strong> >20% abaixo da meta → Ação imediata<br>
-                    🟡 <strong>Atenção:</strong> 10-20% abaixo → Investigar<br>
-                    🟢 <strong>OK:</strong> Dentro da faixa (-10% a +10%)<br>
-                    🔵 <strong>Excelente:</strong> >10% acima da meta
-                </div>
-
-                <p style="margin-bottom: 15px;"><strong>5. Sugestões de Ação:</strong></p>
-                <div style="background: white; padding: 15px; border-radius: 8px;">
-                    <strong>IA sugere baseado no desvio:</strong><br>
-                    • <strong>Se muito abaixo:</strong> Treinamento urgente, revisão de processos<br>
-                    • <strong>Se abaixo:</strong> Coaching, comparação com melhores lojas<br>
-                    • <strong>Se meta irrealista:</strong> Ajustar meta baseado em dados<br>
-                    • <strong>Se acima:</strong> Documentar best practice, replicar
-                </div>
-
-                <p style="margin-top: 15px; padding: 15px; background: #d1fae5; border-radius: 8px;"><strong>💰 Impacto:</strong> Captura R$ 28-37 milhões/ano em ganhos de produtividade + Cria cultura de melhoria contínua</p>
-            </div>
-
-            <div class="alert info">
-                <strong>🎯 Exemplo Prático Completo:</strong><br><br>
-                <strong>Loja Mix Fortaleza - Açougue - Segunda-feira</strong><br>
-                • <strong>Meta configurada:</strong> 15 kg/hora/pessoa<br>
-                • <strong>Histórico real:</strong> 12 kg/hora (20% abaixo)<br>
-                • <strong>Absenteísmo previsto:</strong> 8% (segundas sempre maior)<br>
-                • <strong>Volume previsto:</strong> 360 kg para vender<br><br>
-                <strong>Cálculo RELEX:</strong><br>
-                1. Horas base = 360kg ÷ 12kg/h (real, não meta) = 30h<br>
-                2. Ajuste absenteísmo = 30h × 1,08 = 32,4h<br>
-                3. <strong>Recomendação: 5 pessoas × 6,5h = 32,5h</strong><br><br>
-                <strong>Alertas gerados:</strong><br>
-                🟡 Produtividade 20% abaixo da meta → Sugestão: treinamento equipe<br>
-                🟡 Absenteísmo 8% (acima média 6%) → Atenção ao clima organizacional<br><br>
-                <strong>Resultado:</strong> Evita ruptura + identifica oportunidade de melhoria
+            <h3>Requisito 2: Produtividade</h3>
+            <div class="benefit-list">
+                <li><strong>Metas configuráveis:</strong> Por setor/loja</li>
+                <li><strong>Drivers específicos:</strong> Kg, itens, cupons</li>
+                <li><strong>Rankings:</strong> Benchmark entre lojas</li>
             </div>
         </div>
 
-        <!-- SEÇÃO 6: KPIs DETALHADOS -->
+        <!-- SEÇÃO 6: KPIs -->
         <div class="content-section">
             <h2>📈 KPIs e Como Chegamos aos Valores</h2>
-            
-            <h3>📊 KPIs Financeiros - Detalhamento</h3>
-            
             <div class="timeline-item">
-                <h4>💰 Redução de Custo com Pessoal</h4>
-                <p><strong>Meta Ano 1 (Conservador):</strong> -6% = R$ 187 milhões</p>
-                <p><strong>Como chegamos:</strong></p>
-                <table class="comparison-table" style="margin-top: 10px;">
-                    <tbody>
-                        <tr>
-                            <td>Base atual de pessoal</td>
-                            <td>R$ 3,12 bilhões/ano</td>
-                        </tr>
-                        <tr>
-                            <td>Benchmark Coop Värmland</td>
-                            <td>6% (com forecast only)</td>
-                        </tr>
-                        <tr>
-                            <td>Grupo Mateus (100% manual = maior potencial)</td>
-                            <td>6% conservador, 10% otimista</td>
-                        </tr>
-                        <tr style="background: #d1fae5; font-weight: bold;">
-                            <td>Meta Ano 1</td>
-                            <td>R$ 3,12B × 0,94 = R$ 2,93 bilhões (-R$ 187M)</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h4>Custo com Pessoal: -6% a -10%</h4>
+                <p><strong>Cálculo:</strong></p>
+                <p>Base: R$ 3,12 bi × 6% = R$ 187M/ano</p>
+                <p><strong>Benchmark:</strong> Coop Värmland (6-10%)</p>
             </div>
-
             <div class="timeline-item">
-                <h4>⏰ Redução de Horas Extras</h4>
-                <p><strong>Meta Ano 1:</strong> -45% = Economia de R$ 38-43 milhões</p>
-                <p><strong>Como chegamos:</strong></p>
-                <table class="comparison-table" style="margin-top: 10px;">
-                    <tbody>
-                        <tr>
-                            <td>Horas extras atuais (estimado)</td>
-                            <td>R$ 85-95 milhões/ano (5-7% da folha)</td>
-                        </tr>
-                        <tr>
-                            <td>Causas principais</td>
-                            <td>Subdimensionamento em entregas (60%), picos não previstos (40%)</td>
-                        </tr>
-                        <tr>
-                            <td>% Evitável com forecast 90%+</td>
-                            <td>75-80% das horas extras não planejadas</td>
-                        </tr>
-                        <tr>
-                            <td>Meta conservadora</td>
-                            <td>Reduzir 45% do total</td>
-                        </tr>
-                        <tr style="background: #d1fae5; font-weight: bold;">
-                            <td>Economia Ano 1</td>
-                            <td>R$ 90M × 45% = R$ 38-43 milhões</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h4>Precisão Forecast: 90%+</h4>
+                <p><strong>Atual:</strong> 50-60% ("feeling")</p>
+                <p><strong>Meta:</strong> 90%+ (IA validada em 200+ clientes)</p>
             </div>
-
             <div class="timeline-item">
-                <h4>📊 Precisão de Forecast</h4>
-                <p><strong>Meta Ano 1:</strong> 90%+ (vs 50-60% atual)</p>
-                <p><strong>Como chegamos:</strong></p>
-                <table class="comparison-table" style="margin-top: 10px;">
-                    <tbody>
-                        <tr>
-                            <td>Método atual</td>
-                            <td>"Feeling" do gerente = 50-60% de precisão</td>
-                        </tr>
-                        <tr>
-                            <td>Benchmark RELEX (4 semanas)</td>
-                            <td>90-95% em clientes grocery</td>
-                        </tr>
-                        <tr>
-                            <td>Yliopiston Apteekki (caso real)</td>
-                            <td>90%+ precisão em 4 e 26 semanas</td>
-                        </tr>
-                        <tr style="background: #d1fae5; font-weight: bold;">
-                            <td>Meta Grupo Mateus (conservadora)</td>
-                            <td>90%+ (4 semanas) | 85%+ (26 semanas)</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h4>Tempo Escalas: -80%</h4>
+                <p><strong>Atual:</strong> 17,5h/sem</p>
+                <p><strong>Meta:</strong> 4h/sem (IA gera previsões)</p>
+                <p>Economia: 13,5h × 276 lojas = 3.726h/sem</p>
             </div>
-
-            <div class="timeline-item">
-                <h4>⏱️ Tempo de Criação de Escalas</h4>
-                <p><strong>Meta Ano 1:</strong> 4h/semana (vs 15-20h atual) = -80%</p>
-                <p><strong>Como chegamos:</strong></p>
-                <table class="comparison-table" style="margin-top: 10px;">
-                    <tbody>
-                        <tr>
-                            <td>Tempo atual (médio por gerente)</td>
-                            <td>17,5 horas/semana</td>
-                        </tr>
-                        <tr>
-                            <td style="padding-left: 20px;">→ Análise manual de necessidades</td>
-                            <td>5h</td>
-                        </tr>
-                        <tr>
-                            <td style="padding-left: 20px;">→ Criação de escalas</td>
-                            <td>9h</td>
-                        </tr>
-                        <tr>
-                            <td style="padding-left: 20px;">→ Ajustes emergenciais</td>
-                            <td>3,5h</td>
-                        </tr>
-                        <tr>
-                            <td>Com RELEX (previsões prontas)</td>
-                            <td>4 horas/semana</td>
-                        </tr>
-                        <tr>
-                            <td style="padding-left: 20px;">→ Revisar dashboard RELEX</td>
-                            <td>0,5h</td>
-                        </tr>
-                        <tr>
-                            <td style="padding-left: 20px;">→ Criar escalas (dados prontos)</td>
-                            <td>3h</td>
-                        </tr>
-                        <tr>
-                            <td style="padding-left: 20px;">→ Ajustes finos</td>
-                            <td>0,5h</td>
-                        </tr>
-                        <tr style="background: #d1fae5; font-weight: bold;">
-                            <td>Economia de tempo</td>
-                            <td>13,5 horas/semana/gerente (-77%)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="timeline-item">
-                <h4>📦 OSA (On-Shelf Availability)</h4>
-                <p><strong>Meta Ano 1:</strong> 96%+ (vs 92-94% atual)</p>
-                <p><strong>Como chegamos:</strong></p>
-                <table class="comparison-table" style="margin-top: 10px;">
-                    <tbody>
-                        <tr>
-                            <td>OSA atual</td>
-                            <td>92-94% (benchmarks setor)</td>
-                        </tr>
-                        <tr>
-                            <td>Causa principal de ruptura</td>
-                            <td>Reposição nos horários errados (pessoas faltando nos picos)</td>
-                        </tr>
-                        <tr>
-                            <td>Com RELEX</td>
-                            <td>Reposição dimensionada corretamente por horário</td>
-                        </tr>
-                        <tr>
-                            <td>Ganho estimado</td>
-                            <td>+2-4 pontos percentuais</td>
-                        </tr>
-                        <tr style="background: #d1fae5; font-weight: bold;">
-                            <td>Meta OSA Ano 1</td>
-                            <td>96%+ (excelência operacional)</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p style="margin-top: 10px; font-size: 0.9em;"><strong>Impacto em vendas:</strong> +2% OSA pode gerar +0,5-1% receita = R$ 160-320M adicionais</p>
-            </div>
-
-            <h3>📋 Resumo de KPIs</h3>
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>KPI</th>
-                        <th>Baseline</th>
-                        <th>Meta Ano 1</th>
-                        <th>Como Medir</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Custo Pessoal</td>
-                        <td>R$ 3,12 bi</td>
-                        <td>-6% a -10%</td>
-                        <td>Folha mensal × 12</td>
-                    </tr>
-                    <tr>
-                        <td>Precisão Forecast</td>
-                        <td>50-60%</td>
-                        <td>90%+</td>
-                        <td>|Previsto - Real| ÷ Real</td>
-                    </tr>
-                    <tr>
-                        <td>Tempo Escalas</td>
-                        <td>17,5h/sem</td>
-                        <td>4h/sem</td>
-                        <td>Survey mensal gerentes</td>
-                    </tr>
-                    <tr>
-                        <td>Horas Extras</td>
-                        <td>R$ 90M/ano</td>
-                        <td>-45%</td>
-                        <td>Horas extras mês × custo × 12</td>
-                    </tr>
-                    <tr>
-                        <td>OSA</td>
-                        <td>92-94%</td>
-                        <td>96%+</td>
-                        <td>Auditorias semanais gôndola</td>
-                    </tr>
-                    <tr>
-                        <td>SLA E-commerce</td>
-                        <td>85-88%</td>
-                        <td>95%+</td>
-                        <td>Pedidos entregues no prazo ÷ Total</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
 
-        <!-- SEÇÃO 7: IMPLEMENTAÇÃO COM GRÁFICO -->
+        <!-- SEÇÃO 7: IMPLEMENTAÇÃO -->
         <div class="content-section">
             <h2>🎯 Roadmap de Implementação</h2>
             
             <div class="highlight-box">
-                <h3>📅 8 Meses em 3 Fases</h3>
-                <p>Piloto <strong>6 meses</strong> (maturação) + Rollout <strong>2 meses</strong> (processo validado).</p>
+                <h3>8 Meses em 3 Fases</h3>
+                <p>Piloto 6 meses + Rollout 1 mês + Finalização 1 mês</p>
             </div>
 
             <div class="alert info">
                 <strong>⏰ Timeline Realista:</strong>
                 <ul>
-                    <li><strong>M1-M6 (Piloto):</strong> 6 meses para setup, integrações e maturação do ML</li>
-                    <li><strong>M7 (Rollout):</strong> 1 mês (processo já validado, templates prontos)</li>
-                    <li><strong>M8 (Finalização):</strong> 1 mês (últimas lojas + otimização)</li>
+                    <li><strong>M1-M6:</strong> Piloto (setup, integrações, ML learning)</li>
+                    <li><strong>M7:</strong> Rollout (133 lojas em 1 mês)</li>
+                    <li><strong>M8:</strong> Finalização (133 lojas em 1 mês)</li>
                 </ul>
             </div>
 
@@ -1387,449 +385,121 @@
                 <canvas id="roiChart"></canvas>
             </div>
 
+            <h3>Fases da Implementação</h3>
             <div class="timeline-item">
-                <h4>🧪 FASE 1: Piloto e Validação (M1-M6 | 6 meses)</h4>
-                <p><strong>Escopo:</strong> 10 lojas (4 Mix + 4 Varejo + 2 Eletro) + 2 CDs</p>
-                <p><strong>Investimento:</strong> R$ 4,5 milhões</p>
-                <p><strong>Economia (últimos 3 meses):</strong> R$ 1,5M (6%) ou R$ 2,5M (10%)</p>
-                
-                <table class="comparison-table" style="margin-top: 15px;">
-                    <thead>
-                        <tr>
-                            <th>Período</th>
-                            <th>Atividades Principais</th>
-                            <th>Entregas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>M1-M2</strong><br>Setup</td>
-                            <td>• Kick-off executivo<br>• Discovery e mapeamento<br>• Auditoria dados<br>• Seleção 10 lojas piloto</td>
-                            <td>Project charter<br>Lojas selecionadas<br>Dados auditados</td>
-                        </tr>
-                        <tr>
-                            <td><strong>M3-M4</strong><br>Integrações</td>
-                            <td>• APIs (POS, WMS, RH, E-comm)<br>• Config plataforma<br>• Import 24m histórico<br>• Testes exaustivos</td>
-                            <td>Integrações OK<br>Dados validados<br>Ambiente pronto</td>
-                        </tr>
-                        <tr>
-                            <td><strong>M5</strong><br>Go-live</td>
-                            <td>• Treinamento (16h gerentes)<br>• Ativação produção<br>• Suporte intensivo<br>• Ajustes diários</td>
-                            <td>Piloto ativo<br>Primeiras previsões<br>Feedback coletado</td>
-                        </tr>
-                        <tr>
-                            <td><strong>M6</strong><br>Maturação</td>
-                            <td>• ML aprende padrões<br>• Calibração algoritmos<br>• Medição ROI<br>• Doc best practices</td>
-                            <td>Precisão 85%+<br>ROI validado<br>Aprovação Fase 2</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h4>FASE 1: Piloto (M1-M6 | 6 meses)</h4>
+                <p><strong>Escopo:</strong> 10 lojas + 2 CDs</p>
+                <p><strong>Investimento:</strong> R$ 4,5M</p>
+                <p>M1-M2: Setup | M3-M4: Integrações | M5: Go-live | M6: Maturação ML</p>
             </div>
 
             <div class="timeline-item">
-                <h4>🚀 FASE 2: Rollout Nacional (M7 | 1 mês)</h4>
-                <p><strong>Escopo:</strong> 133 lojas (MA: 50, PA/PI: 43, CE/RN/PB: 40) + 3 CDs</p>
-                <p><strong>Investimento:</strong> R$ 3,5 milhões</p>
-                <p><strong>Economia Mês 7:</strong> R$ 9M (6%) ou R$ 15M (10%)</p>
-                <p><strong>Por que só 1 mês?</strong> Processo validado no piloto, integrações prontas, templates configurados, treinamentos padronizados</p>
+                <h4>FASE 2: Rollout (M7 | 1 mês)</h4>
+                <p><strong>Escopo:</strong> 133 lojas + 3 CDs</p>
+                <p><strong>Investimento:</strong> R$ 3,5M</p>
+                <p>Rápido pois processo já validado no piloto</p>
             </div>
 
             <div class="timeline-item">
-                <h4>✅ FASE 3: Finalização (M8 | 1 mês)</h4>
-                <p><strong>Escopo:</strong> 133 lojas restantes + 2 CDs + novas aberturas</p>
-                <p><strong>Investimento:</strong> R$ 2,5 milhões</p>
-                <p><strong>Economia Mês 8:</strong> R$ 15,6M (6%) ou R$ 26M (10%)</p>
-                <p><strong>Cobertura final:</strong> 276 lojas + 7 CDs = 100%</p>
+                <h4>FASE 3: Finalização (M8 | 1 mês)</h4>
+                <p><strong>Escopo:</strong> 133 lojas restantes + 2 CDs</p>
+                <p><strong>Investimento:</strong> R$ 2,5M</p>
+                <p>Cobertura 100%: 276 lojas</p>
             </div>
 
-            <h3>📈 Evolução Financeira Detalhada</h3>
             <table class="comparison-table">
                 <thead>
-                    <tr>
-                        <th>Período</th>
-                        <th>Fase</th>
-                        <th>Invest.</th>
-                        <th>Benef. 6%</th>
-                        <th>Benef. 10%</th>
-                        <th>Acum. 6%</th>
-                        <th>Acum. 10%</th>
-                    </tr>
+                    <tr><th>Período</th><th>Invest.</th><th>Benef. 6%</th><th>Acum. 6%</th></tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>M1-M6</td>
-                        <td>Piloto</td>
-                        <td>-R$ 4,5M</td>
-                        <td>R$ 1,5M</td>
-                        <td>R$ 2,5M</td>
-                        <td style="color: red;">-R$ 3M</td>
-                        <td style="color: red;">-R$ 2M</td>
-                    </tr>
-                    <tr>
-                        <td>M7</td>
-                        <td>Rollout</td>
-                        <td>-R$ 3,5M</td>
-                        <td>R$ 9M</td>
-                        <td>R$ 15M</td>
-                        <td style="color: green;">+R$ 2,5M</td>
-                        <td style="color: green;">+R$ 10,5M</td>
-                    </tr>
-                    <tr>
-                        <td>M8</td>
-                        <td>Final</td>
-                        <td>-R$ 2,5M</td>
-                        <td>R$ 15,6M</td>
-                        <td>R$ 26M</td>
-                        <td style="color: green;">+R$ 15,6M</td>
-                        <td style="color: green;">+R$ 34M</td>
-                    </tr>
-                    <tr>
-                        <td>M9-M12</td>
-                        <td>Ano 1 completo</td>
-                        <td>-</td>
-                        <td>R$ 62,4M</td>
-                        <td>R$ 104M</td>
-                        <td style="color: green; font-weight: bold;">+R$ 78M</td>
-                        <td style="color: green; font-weight: bold;">+R$ 138M</td>
-                    </tr>
+                    <tr><td>M1-M6</td><td>R$ 4,5M</td><td>R$ 1,5M</td><td>-R$ 3M</td></tr>
+                    <tr><td>M7</td><td>R$ 3,5M</td><td>R$ 9M</td><td>+R$ 2,5M</td></tr>
+                    <tr><td>M8</td><td>R$ 2,5M</td><td>R$ 15,6M</td><td>+R$ 15,6M</td></tr>
+                    <tr><td>M9-M12</td><td>-</td><td>R$ 62M</td><td>+R$ 78M</td></tr>
                     <tr style="background: #d1fae5; font-weight: bold;">
-                        <td>Ano 1 Total</td>
-                        <td>-</td>
-                        <td>R$ 10,5M</td>
-                        <td>R$ 187M</td>
-                        <td>R$ 312M</td>
-                        <td><span class="status-badge success">+R$ 177M</span></td>
-                        <td><span class="status-badge success">+R$ 302M</span></td>
-                    </tr>
-                    <tr>
-                        <td>Ano 2</td>
-                        <td>Operação</td>
-                        <td>R$ 2M</td>
-                        <td>R$ 202M</td>
-                        <td>R$ 337M</td>
-                        <td><span class="status-badge success">+R$ 377M</span></td>
-                        <td><span class="status-badge success">+R$ 637M</span></td>
-                    </tr>
-                    <tr>
-                        <td>Ano 3</td>
-                        <td>Maturidade</td>
-                        <td>R$ 2M</td>
-                        <td>R$ 218M</td>
-                        <td>R$ 364M</td>
-                        <td><span class="status-badge success">+R$ 593M</span></td>
-                        <td><span class="status-badge success">+R$ 999M</span></td>
+                        <td>Ano 1</td><td>R$ 10,5M</td><td>R$ 187M</td><td><span class="status-badge success">+R$ 177M</span></td>
                     </tr>
                 </tbody>
             </table>
-
-            <h3>📅 Cronograma Visual</h3>
-            <div style="background: #f8f9fa; padding: 25px; border-radius: 12px;">
-                <div style="display: grid; grid-template-columns: 6fr 1fr 1fr; gap: 8px;">
-                    <div style="background: #fef3c7; padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #f59e0b;">
-                        <strong style="color: #92400e;">FASE 1: PILOTO</strong><br>
-                        <span style="font-size: 0.9em;">M1-M6 (6 meses)</span><br>
-                        <span style="font-size: 0.85em;">10 lojas + 2 CDs</span>
-                    </div>
-                    <div style="background: #dbeafe; padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #3b82f6;">
-                        <strong style="color: #1e40af;">F2: ROLLOUT</strong><br>
-                        <span style="font-size: 0.9em;">M7 (1 mês)</span><br>
-                        <span style="font-size: 0.85em;">133 lojas</span>
-                    </div>
-                    <div style="background: #d1fae5; padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #10b981;">
-                        <strong style="color: #065f46;">F3: FINAL</strong><br>
-                        <span style="font-size: 0.9em;">M8 (1 mês)</span><br>
-                        <span style="font-size: 0.85em;">133 lojas</span>
-                    </div>
-                </div>
-                <div style="text-align: center; margin-top: 15px; color: #666;">
-                    <strong>Total:</strong> 8 meses | <strong>Cobertura:</strong> 276 lojas + 7 CDs (100%)
-                </div>
-            </div>
         </div>
 
-        <!-- SEÇÃO 8: DECISÃO COMPLETA -->
+        <!-- SEÇÃO 8: DECISÃO -->
         <div class="content-section">
-            <h2>✔️ Recomendação Final</h2>
+            <h2>✔️ Decisão Final</h2>
             
             <div class="highlight-box">
-                <h2 style="border: none; color: white; text-align: center; font-size: 2.2em;">🎯 APROVAR IMEDIATAMENTE</h2>
+                <h2 style="border: none; color: white; text-align: center;">🎯 APROVAR AGORA</h2>
                 <p style="font-size: 1.3em; text-align: center; margin: 20px 0;">
-                    Esta é uma decisão estratégica com <strong>ROI excepcional</strong> e <strong>risco baixíssimo</strong>.
+                    ROI <strong>1.870-3.120%</strong> | Payback <strong>15 dias</strong>
                 </p>
                 <div style="border-top: 2px solid rgba(255,255,255,0.3); padding-top: 30px; margin-top: 30px;">
                     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center;">
                         <div>
                             <div style="font-size: 2.5em; font-weight: bold;">R$ 607M-1B</div>
-                            <div style="margin-top: 8px;">Benefício Líquido 3 Anos</div>
+                            <div>Benefício 3 Anos</div>
                         </div>
                         <div>
-                            <div style="font-size: 2.5em; font-weight: bold;">1.870-3.120%</div>
-                            <div style="margin-top: 8px;">ROI Primeiro Ano</div>
+                            <div style="font-size: 2.5em; font-weight: bold;">1.870%</div>
+                            <div>ROI Ano 1</div>
                         </div>
                         <div>
-                            <div style="font-size: 2.5em; font-weight: bold;">15 dias</div>
-                            <div style="margin-top: 8px;">Payback Period</div>
+                            <div style="font-size: 2.5em; font-weight: bold;">15</div>
+                            <div>Dias Payback</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <h3>💎 Por Que Esta É Uma Decisão Sem Contestação</h3>
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <div style="font-size: 2em;">💰</div>
-                    <div style="margin: 10px 0;"><strong>ROI 1.870-3.120%</strong></div>
-                    <div style="font-size: 0.88em;">Entre os melhores projetos de TI documentados (típico 200-400%)</div>
-                </div>
-                <div class="metric-card">
-                    <div style="font-size: 2em;">⚡</div>
-                    <div style="margin: 10px 0;"><strong>Payback 15 dias</strong></div>
-                    <div style="font-size: 0.88em;">Praticamente instantâneo - se paga em 2 semanas</div>
-                </div>
-                <div class="metric-card">
-                    <div style="font-size: 2em;">✅</div>
-                    <div style="margin: 10px 0;"><strong>Risco Baixíssimo</strong></div>
-                    <div style="font-size: 0.88em;">200+ clientes grocery, tecnologia madura, faseado</div>
-                </div>
-                <div class="metric-card">
-                    <div style="font-size: 2em;">🎯</div>
-                    <div style="margin: 10px 0;"><strong>Timing Perfeito</strong></div>
-                    <div style="font-size: 0.88em;">Expansão ativa, baixa alavancagem, dores críticas</div>
-                </div>
-            </div>
-
-            <h3>🚀 5 Razões Para Aprovar HOJE</h3>
+            <h3>🚀 7 Razões Para Aprovar HOJE</h3>
             <div class="benefit-list">
-                <li><strong>💰 Retorno Imediato:</strong> Payback em 15 dias. Cada dia de atraso custa R$ 512-855 mil em ineficiências que continuam</li>
-                <li><strong>📈 Expansão em Curso:</strong> 16+ novas lojas previstas em 2025. Melhor ter RELEX antes de abrir do que otimizar depois (economia R$ 800k/loja)</li>
-                <li><strong>❌ Dores Críticas Reais:</strong> Planejamento 100% manual documentado = maior potencial de ganho imediato da indústria</li>
-                <li><strong>🏆 Vantagem Competitiva:</strong> Ser early adopter de IA em workload antes de Assaí, Carrefour e GPA</li>
-                <li><strong>📊 Benchmarks Comprovados:</strong> Coop Värmland, K Group, ICA Sweden validaram 6-10% de economia real</li>
+                <li><strong>💰 Retorno Imediato:</strong> Payback 15 dias - cada dia custa R$ 512-855k</li>
+                <li><strong>📈 Expansão:</strong> 16+ lojas em 2025 - ter RELEX antes</li>
+                <li><strong>❌ Dores Críticas:</strong> 100% manual = máximo ganho</li>
+                <li><strong>🏆 Early Adopter:</strong> IA antes de Assaí/Carrefour = vantagem 12-18 meses</li>
+                <li><strong>📊 Validado:</strong> Coop comprovou 6-10%</li>
+                <li><strong>💪 Baixa Alavancagem:</strong> 0,29x permite investir</li>
+                <li><strong>🎯 Requisitos Atendidos:</strong> 100% das necessidades mapeadas</li>
             </div>
 
-            <h3>📊 Matriz de Decisão</h3>
+            <h3>⚖️ Matriz Risco vs Retorno</h3>
             <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Critério</th>
-                        <th>Peso</th>
-                        <th>RELEX</th>
-                        <th>Status Quo</th>
-                    </tr>
-                </thead>
+                <thead><tr><th>Fator</th><th>Análise</th><th>Score</th></tr></thead>
                 <tbody>
-                    <tr>
-                        <td>ROI / Retorno Financeiro</td>
-                        <td>30%</td>
-                        <td><span class="status-badge success">10/10</span></td>
-                        <td><span class="status-badge danger">0/10</span></td>
-                    </tr>
-                    <tr>
-                        <td>Risco / Maturidade</td>
-                        <td>25%</td>
-                        <td><span class="status-badge success">9/10</span></td>
-                        <td><span class="status-badge warning">3/10</span></td>
-                    </tr>
-                    <tr>
-                        <td>Alinhamento Estratégico</td>
-                        <td>20%</td>
-                        <td><span class="status-badge success">10/10</span></td>
-                        <td><span class="status-badge danger">2/10</span></td>
-                    </tr>
-                    <tr>
-                        <td>Atende Requisitos</td>
-                        <td>15%</td>
-                        <td><span class="status-badge success">10/10</span></td>
-                        <td><span class="status-badge danger">1/10</span></td>
-                    </tr>
-                    <tr>
-                        <td>Facilidade de Implementação</td>
-                        <td>10%</td>
-                        <td><span class="status-badge success">8/10</span></td>
-                        <td><span class="status-badge warning">5/10</span></td>
-                    </tr>
-                    <tr style="font-weight: bold; background: #d1fae5;">
-                        <td colspan="2"><strong>SCORE TOTAL</strong></td>
-                        <td><span class="status-badge success">9,55/10</span></td>
-                        <td><span class="status-badge danger">1,75/10</span></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>⚖️ Comparação: Status Quo vs RELEX</h3>
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Aspecto</th>
-                        <th>Status Quo (Não Fazer)</th>
-                        <th>Com RELEX</th>
-                        <th>Delta</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Custo 3 Anos</strong></td>
-                        <td><span style="color: red;">R$ 639M-1,01B desperdiçados</span></td>
-                        <td><span style="color: green;">R$ 607M-1,01B economizados</span></td>
-                        <td><span class="status-badge success">Delta R$ 1,25-2B</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Precisão Workload</strong></td>
-                        <td>50-60% ("achismo")</td>
-                        <td>90%+ (IA)</td>
-                        <td><span class="status-badge success">+50%</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tempo Gerentes</strong></td>
-                        <td>15-20h/sem planejamento</td>
-                        <td>4h/sem</td>
-                        <td><span class="status-badge success">+12-16h liberadas</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Absenteísmo</strong></td>
-                        <td>Não previsto, surpresas diárias</td>
-                        <td>Previsto 85%+, gerenciado</td>
-                        <td><span class="status-badge success">Gestão proativa</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Métricas Produtividade</strong></td>
-                        <td>1/8 setores (só caixas)</td>
-                        <td>8/8 setores (100%)</td>
-                        <td><span class="status-badge success">+700%</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Novas Lojas</strong></td>
-                        <td>4-6 meses para otimizar</td>
-                        <td>Otimizado desde dia 1</td>
-                        <td><span class="status-badge success">3-6x mais rápido</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Padronização</strong></td>
-                        <td>Cada gerente faz do seu jeito</td>
-                        <td>Best practices replicáveis</td>
-                        <td><span class="status-badge success">Consistência</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Competitividade</strong></td>
-                        <td>Perdendo para concorrentes com IA</td>
-                        <td>Liderando com IA</td>
-                        <td><span class="status-badge success">Vantagem</span></td>
-                    </tr>
+                    <tr><td>Retorno Financeiro</td><td>ROI 1.870-3.120%</td><td><span class="status-badge success">10/10</span></td></tr>
+                    <tr><td>Risco Técnico</td><td>200+ clientes, madura</td><td><span class="status-badge success">9/10</span></td></tr>
+                    <tr><td>Timing</td><td>Expansão ativa, baixa dívida</td><td><span class="status-badge success">10/10</span></td></tr>
                 </tbody>
             </table>
 
             <div class="alert danger">
-                <strong>⚠️ O Custo REAL de Adiar Esta Decisão:</strong>
+                <strong>⚠️ Custo de Adiar:</strong>
                 <ul>
-                    <li>❌ <strong>Perder R$ 15,6-26M por mês</strong> em economia potencial não capturada</li>
-                    <li>❌ <strong>Abrir 16+ lojas em 2025</strong> sem visibilidade (custo ramp-up extra R$ 800k/loja = R$ 12,8M)</li>
-                    <li>❌ <strong>Manter 276 gerentes</strong> gastando 15-20h/sem em tarefas que IA faz melhor e mais rápido</li>
-                    <li>❌ <strong>Continuar sem métricas</strong> em 7/8 setores = cego operacionalmente</li>
-                    <li>❌ <strong>Perder vantagem competitiva</strong> caso Assaí/Carrefour adotem IA primeiro</li>
-                    <li>❌ <strong>Desperdiçar R$ 187-312M em 2025</strong> em ineficiências que seriam eliminadas</li>
-                    <li>❌ <strong>Custo de oportunidade:</strong> Gerentes poderiam focar em vendas, perdas, cliente com +12-16h/sem liberadas</li>
+                    <li>❌ R$ 15,6-26M/mês em economia perdida</li>
+                    <li>❌ Novas lojas sem visibilidade (R$ 800k/loja extra)</li>
+                    <li>❌ Early adopter advantage perdida</li>
                 </ul>
             </div>
 
             <h3>📋 Próximos Passos (30 dias)</h3>
             <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Semana</th>
-                        <th>Ação</th>
-                        <th>Responsável</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
+                <thead><tr><th>Semana</th><th>Ação</th><th>Owner</th></tr></thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Apresentação Comitê Executivo</td>
-                        <td>CFO + CIO</td>
-                        <td><span class="status-badge warning">Pendente</span></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Aprovação princípio + budget</td>
-                        <td>CEO/CFO/COO</td>
-                        <td><span class="status-badge warning">Pendente</span></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>RFP formal RELEX</td>
-                        <td>Procurement</td>
-                        <td><span class="status-badge warning">Pendente</span></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Apresentação Conselho</td>
-                        <td>CEO</td>
-                        <td><span class="status-badge warning">Pendente</span></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Due diligence técnica</td>
-                        <td>TI</td>
-                        <td><span class="status-badge warning">Pendente</span></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Negociação contrato</td>
-                        <td>Jurídico</td>
-                        <td><span class="status-badge warning">Pendente</span></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Assinatura + Kick-off</td>
-                        <td>CEO</td>
-                        <td><span class="status-badge warning">Pendente</span></td>
-                    </tr>
+                    <tr><td>1</td><td>Apresentação Comitê</td><td>CFO + CIO</td></tr>
+                    <tr><td>2</td><td>Aprovação Conselho + RFP</td><td>CEO + Procurement</td></tr>
+                    <tr><td>3</td><td>Due diligence + Negociação</td><td>TI + Jurídico</td></tr>
+                    <tr><td>4</td><td>Assinatura + Kick-off</td><td>CEO</td></tr>
                 </tbody>
             </table>
 
-            <div class="highlight-box" style="margin-top: 40px;">
-                <h3 style="text-align: center; font-size: 1.8em;">Esta não é uma decisão de "SE", mas de "QUANDO"</h3>
-                <div style="font-size: 1.4em; text-align: center; margin: 30px 0;">
-                    E o <strong>"QUANDO"</strong> ideal é<br>
-                    <span style="font-size: 2em; color: #fbbf24;">AGORA</span>
-                </div>
-            </div>
-
-            <div style="margin-top: 40px; padding: 30px; background: #f8f9fa; border-radius: 12px; border: 2px solid #667eea;">
-                <h3 style="color: #667eea; margin-bottom: 20px; text-align: center;">📞 Contatos</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
-                    <div>
-                        <h4 style="color: #667eea;">RELEX Solutions Brasil</h4>
-                        <p><strong>Website:</strong> www.relexsolutions.com</p>
-                        <p><strong>E-mail:</strong> contato-br@relexsolutions.com</p>
-                        <p><strong>Clientes Grocery:</strong> 200+</p>
-                        <p><strong>Gartner:</strong> Leader 2025</p>
-                    </div>
-                    <div>
-                        <h4 style="color: #667eea;">Grupo Mateus</h4>
-                        <p><strong>Sponsor:</strong> COO (a confirmar)</p>
-                        <p><strong>PMO:</strong> [A definir]</p>
-                        <p><strong>Budget Ano 1:</strong> R$ 10 milhões</p>
-                        <p><strong>Kick-off:</strong> Janeiro 2026</p>
-                    </div>
-                </div>
-            </div>
-
-            <div style="margin-top: 30px; text-align: center; padding: 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; color: white;">
-                <h3 style="color: white; margin-bottom: 15px;">📄 Informações do Documento</h3>
-                <p><strong>Projeto:</strong> VA-GM-WLF (Value Assessment - Grupo Mateus - Workload Forecasting)</p>
-                <p><strong>Versão:</strong> 3.0 - Completa e Detalhada</p>
-                <p><strong>Data:</strong> Outubro 2025</p>
-                <p><strong>Cliente:</strong> Grupo Mateus S.A. - 3º Maior Varejista do Brasil</p>
-                <p><strong>Classificação:</strong> Confidencial - Uso Executivo</p>
-                <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;"><em>© 2025 Grupo Mateus S.A. - Todos os direitos reservados</em></p>
+            <div style="margin-top: 30px; text-align: center; padding: 25px; background: #f8f9fa; border-radius: 12px;">
+                <p><strong>VA-GM-WLF v3.0</strong> | Outubro 2025</p>
+                <p>© 2025 Grupo Mateus S.A.</p>
             </div>
         </div>
 
     </div>
 
     <script>
-        // NAVEGAÇÃO - ESCOPO GLOBAL
         function showSection(index) {
             const sections = document.querySelectorAll('.content-section');
             const buttons = document.querySelectorAll('.nav-tabs button');
@@ -1842,13 +512,11 @@
             
             window.scrollTo({ top: 0, behavior: 'smooth' });
             
-            // Renderizar gráfico na seção 7
             if (index === 7) {
                 setTimeout(renderChart, 200);
             }
         }
 
-        // RENDERIZAR GRÁFICO
         function renderChart() {
             const canvas = document.getElementById('roiChart');
             if (!canvas) return;
@@ -1859,28 +527,17 @@
             new Chart(canvas, {
                 type: 'bar',
                 data: {
-                    labels: ['M1-M6\nPiloto', 'M7\nRollout', 'M8\nFinal', 'M9-M12\nAno 1', 'Ano 2', 'Ano 3'],
+                    labels: ['M1-M6', 'M7', 'M8', 'M9-M12', 'Ano 2', 'Ano 3'],
                     datasets: [
                         {
                             label: 'Investimento',
                             data: [-4.5, -3.5, -2.5, 0, -2, -2],
-                            backgroundColor: 'rgba(239, 68, 68, 0.8)',
-                            borderColor: 'rgba(239, 68, 68, 1)',
-                            borderWidth: 2
+                            backgroundColor: 'rgba(239, 68, 68, 0.8)'
                         },
                         {
                             label: 'Benefícios 6%',
-                            data: [1.5, 9, 15.6, 62.4, 202, 218],
-                            backgroundColor: 'rgba(59, 130, 246, 0.8)',
-                            borderColor: 'rgba(59, 130, 246, 1)',
-                            borderWidth: 2
-                        },
-                        {
-                            label: 'Benefícios 10%',
-                            data: [2.5, 15, 26, 104, 337, 364],
-                            backgroundColor: 'rgba(16, 185, 129, 0.8)',
-                            borderColor: 'rgba(16, 185, 129, 1)',
-                            borderWidth: 2
+                            data: [1.5, 9, 15.6, 62, 202, 218],
+                            backgroundColor: 'rgba(59, 130, 246, 0.8)'
                         },
                         {
                             label: 'Acumulado 6%',
@@ -1889,20 +546,7 @@
                             borderColor: 'rgba(102, 126, 234, 1)',
                             borderWidth: 3,
                             pointRadius: 6,
-                            fill: false,
-                            tension: 0.4,
-                            yAxisID: 'y'
-                        },
-                        {
-                            label: 'Acumulado 10%',
-                            data: [-2, 10.5, 34, 138, 637, 999],
-                            type: 'line',
-                            borderColor: 'rgba(16, 185, 129, 1)',
-                            borderWidth: 3,
-                            pointRadius: 6,
-                            fill: false,
-                            tension: 0.4,
-                            yAxisID: 'y'
+                            fill: false
                         }
                     ]
                 },
@@ -1911,21 +555,10 @@
                     plugins: {
                         title: {
                             display: true,
-                            text: 'Evolução Financeira: Investimento, Benefícios e Acumulado (R$ Milhões)',
-                            font: { size: 15, weight: 'bold' },
-                            padding: 20
+                            text: 'Evolução Financeira (R$ Milhões)',
+                            font: { size: 15, weight: 'bold' }
                         },
-                        legend: {
-                            position: 'bottom',
-                            labels: { padding: 12, usePointStyle: true, font: { size: 10 } }
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(ctx) {
-                                    return ctx.dataset.label + ': R$ ' + ctx.parsed.y.toFixed(1) + 'M';
-                                }
-                            }
-                        }
+                        legend: { position: 'bottom' }
                     },
                     scales: {
                         y: {
@@ -1933,11 +566,6 @@
                                 callback: function(val) {
                                     return 'R$ ' + val + 'M';
                                 }
-                            },
-                            title: {
-                                display: true,
-                                text: 'R$ Milhões',
-                                font: { weight: 'bold' }
                             }
                         }
                     }
@@ -1945,7 +573,6 @@
             });
         }
 
-        // NAVEGAÇÃO TECLADO
         document.addEventListener('keydown', function(e) {
             const sections = document.querySelectorAll('.content-section');
             let curr = 0;
@@ -1953,29 +580,10 @@
             
             if (e.key === 'ArrowRight' && curr < sections.length - 1) showSection(curr + 1);
             if (e.key === 'ArrowLeft' && curr > 0) showSection(curr - 1);
-            if ((e.ctrlKey || e.metaKey) && e.key === 'h') { e.preventDefault(); showSection(0); }
-            if ((e.ctrlKey || e.metaKey) && e.key === 'r') { e.preventDefault(); showSection(8); }
         });
 
-        // BARRA PROGRESSO
-        window.addEventListener('scroll', function() {
-            const scroll = document.documentElement.scrollTop || document.body.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const percent = (scroll / height) * 100;
-            
-            let bar = document.getElementById('progress-bar');
-            if (!bar) {
-                bar = document.createElement('div');
-                bar.id = 'progress-bar';
-                bar.style.cssText = 'position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,#10b981,#059669);z-index:9999;transition:width 0.3s;';
-                document.body.appendChild(bar);
-            }
-            bar.style.width = percent + '%';
-        });
-
-        console.log('%c🚀 VA-GM-WLF v3.0 - Business Case RELEX', 'font-size:20px;color:#667eea;font-weight:bold');
-        console.log('%c💰 ROI: 1.870-3.120% | Payback: 15 dias | Economia: R$ 607M-1B', 'font-size:13px;color:#10b981');
-        console.log('%c⌨️  Atalhos: ← → navegar | Ctrl+H início | Ctrl+R decisão', 'color:#666');
+        console.log('%c🚀 VA-GM-WLF v3.0 - Corrigido', 'font-size:20px;color:#667eea;font-weight:bold');
+        console.log('%cTodas as 9 seções na ordem correta!', 'font-size:14px;color:#10b981');
     </script>
 </body>
 </html>
