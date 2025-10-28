@@ -1,4 +1,152 @@
-<!DOCTYPE html>
+</div>
+
+    <!-- Chart.js para gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <script>
+        function showSection(index) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.classList.remove('active'));
+            
+            const buttons = document.querySelectorAll('.nav-tabs button');
+            buttons.forEach(button => button.classList.remove('active'));
+            
+            sections[index].classList.add('active');
+            buttons[index].classList.add('active');
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Renderizar gráfico se for a seção de implementação (índice 7)
+            if (index === 7) {
+                setTimeout(renderROIChart, 100);
+            }
+        }
+
+        // Função para renderizar o gráfico de ROI
+        function renderROIChart() {
+            const canvas = document.getElementById('roiChart');
+            if (!canvas) return;
+            
+            // Destruir gráfico anterior se existir
+            const existingChart = Chart.getChart(canvas);
+            if (existingChart) {
+                existingChart.destroy();
+            }
+            
+            const ctx = canvas.getContext('2d');
+            
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['M1-M6\nPiloto', 'M7-M12\nRollout', 'M13-M18\nFinalização', 'Ano 2\nCompleto', 'Ano 3\nCompleto'],
+                    datasets: [
+                        {
+                            label: 'Investimento',
+                            data: [-4.5, -3.5, -2.5, -2, -2],
+                            backgroundColor: 'rgba(239, 68, 68, 0.7)',
+                            borderColor: 'rgba(239, 68, 68, 1)',
+                            borderWidth: 2,
+                            order: 2
+                        },
+                        {
+                            label: 'Benefícios (Conservador 6%)',
+                            data: [1.5, 55, 130, 202, 218],
+                            backgroundColor: 'rgba(59, 130, 246, 0.7)',
+                            borderColor: 'rgba(59, 130, 246, 1)',
+                            borderWidth: 2,
+                            order: 2
+                        },
+                        {
+                            label: 'Benefícios (Otimista 10%)',
+                            data: [2.5, 92, 217, 337, 364],
+                            backgroundColor: 'rgba(16, 185, 129, 0.7)',
+                            borderColor: 'rgba(16, 185, 129, 1)',
+                            borderWidth: 2,
+                            order: 2
+                        },
+                        {
+                            label: 'Acumulado (Conservador)',
+                            data: [-3, 48, 176, 376, 592],
+                            type: 'line',
+                            borderColor: 'rgba(102, 126, 234, 1)',
+                            backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                            borderWidth: 3,
+                            pointRadius: 6,
+                            pointBackgroundColor: 'rgba(102, 126, 234, 1)',
+                            fill: false,
+                            tension: 0.4,
+                            order: 1
+                        },
+                        {
+                            label: 'Acumulado (Otimista)',
+                            data: [-2, 87, 302, 637, 999],
+                            type: 'line',
+                            borderColor: 'rgba(16, 185, 129, 1)',
+                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                            borderWidth: 3,
+                            pointRadius: 6,
+                            pointBackgroundColor: 'rgba(16, 185, 129, 1)',
+                            fill: false,
+                            tension: 0.4,
+                            order: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Evolução de Investimento, Benefícios e Acumulado (R$ Milhões)',
+                            font: {
+                                size: 16,
+                                weight: 'bold'
+                            },
+                            padding: 20
+                        },
+                        legend: {
+                            display: true,
+                            position: 'bottom',
+                            labels: {
+                                padding: 15,
+                                font: {
+                                    size: 12
+                                },
+                                usePointStyle: true
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    const value = context.parsed.y;
+                                    label += 'R$ ' + value.toFixed(1) + 'M';
+                                    return label;
+                                }
+                            },
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            titleFont: {
+                                size: 14
+                            },
+                            bodyFont: {
+                                size: 13
+                            },
+                            padding: 12
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            ticks: {
+                                callback: function(value) {
+                                    return 'R$ ' + value + 'M';
+                                },
+                                font: {
+                                <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -2058,20 +2206,38 @@
             </div>
         </div>
 
-    </div>
-
-    <script>
-        function showSection(index) {
-            const sections = document.querySelectorAll('.content-section');
-            sections.forEach(section => section.classList.remove('active'));
-            
-            const buttons = document.querySelectorAll('.nav-tabs button');
-            buttons.forEach(button => button.classList.remove('active'));
-            
-            sections[index].classList.add('active');
-            buttons[index].classList.add('active');
-            
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+                                    size: 11
+                                }
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            },
+                            title: {
+                                display: true,
+                                text: 'Valores em R$ Milhões',
+                                font: {
+                                    size: 12,
+                                    weight: 'bold'
+                                }
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                font: {
+                                    size: 11
+                                }
+                            }
+                        }
+                    },
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    }
+                }
+            });
         }
 
         document.addEventListener('keydown', function(e) {
@@ -2165,8 +2331,9 @@
         });
 
         console.log('%c🚀 RELEX Business Case v3.0 - Grupo Mateus', 'font-size: 22px; color: #667eea; font-weight: bold;');
-        console.log('%c✨ Atualizado: Benchmarks 6%/10% + Requisitos Específicos', 'font-size: 14px; color: #10b981; font-weight: bold;');
+        console.log('%c✨ Atualizado: Benchmarks 6%/10% + Requisitos Específicos + Implementação 18 meses', 'font-size: 14px; color: #10b981; font-weight: bold;');
         console.log('%c💰 Economia Projetada: R$ 607M - R$ 1,01B (3 anos)', 'font-size: 14px; color: #f59e0b; font-weight: bold;');
+        console.log('%c📊 Gráfico de ROI adicionado na seção Implementação', 'font-size: 14px; color: #3b82f6; font-weight: bold;');
         console.log('%c⌨️  Atalhos: ← → (navegar) | Ctrl+H (início) | Ctrl+R (decisão) | ? (ajuda)', 'color: #666;');
     </script>
 </body>
