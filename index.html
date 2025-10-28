@@ -261,22 +261,30 @@
 <body>
     <div class="container">
         <header>
-            <h1>🚀 RELEX Workload Forecasting</h1>
-            <div class="subtitle">Business Case Executivo - Grupo Mateus S.A.</div>
-            <div class="version-badge">v3.0 Final - Análise Completa</div>
-            <div style="margin-top: 15px; color: #999;">Outubro 2025 | VA-GM-WLF | Confidencial</div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+                <div style="flex: 1;">
+                    <h1 data-i18n="header.title">🚀 RELEX Workload Forecasting</h1>
+                </div>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="pt" title="Português">🇧🇷 PT</button>
+                    <button class="lang-btn" data-lang="en" title="English">🇺🇸 EN</button>
+                </div>
+            </div>
+            <div class="subtitle" data-i18n="header.subtitle">Business Case Executivo - Grupo Mateus S.A.</div>
+            <div class="version-badge" data-i18n="header.version">v3.0 Final - Análise Completa</div>
+            <div style="margin-top: 15px; color: #999;" data-i18n="header.date">Outubro 2025 | VA-GM-WLF | Confidencial</div>
         </header>
 
         <nav class="nav-tabs" id="navTabs">
-            <button class="active" data-section="0">📊 Resumo</button>
-            <button data-section="1">🏢 Contexto</button>
-            <button data-section="2">❌ Dores</button>
-            <button data-section="3">✅ Solução</button>
-            <button data-section="4">💰 Financeiro</button>
-            <button data-section="5">📋 Requisitos</button>
-            <button data-section="6">📈 KPIs</button>
-            <button data-section="7">🎯 Implementação</button>
-            <button data-section="8">✔️ Decisão</button>
+            <button class="active" data-section="0" data-i18n="nav.summary">📊 Resumo</button>
+            <button data-section="1" data-i18n="nav.context">🏢 Contexto</button>
+            <button data-section="2" data-i18n="nav.pains">❌ Dores</button>
+            <button data-section="3" data-i18n="nav.solution">✅ Solução</button>
+            <button data-section="4" data-i18n="nav.financial">💰 Financeiro</button>
+            <button data-section="5" data-i18n="nav.requirements">📋 Requisitos</button>
+            <button data-section="6" data-i18n="nav.kpis">📈 KPIs</button>
+            <button data-section="7" data-i18n="nav.implementation">🎯 Implementação</button>
+            <button data-section="8" data-i18n="nav.decision">✔️ Decisão</button>
         </nav>
 
         <!-- SEÇÃO 0: RESUMO -->
@@ -2835,6 +2843,175 @@
 
         console.log('%c🚀 Business Case RELEX - Grupo Mateus v3.0', 'font-size:20px;color:#667eea;font-weight:bold');
         console.log('%c✅ Todas as 9 seções com conteúdo completo e detalhado!', 'font-size:14px;color:#10b981');
+
+        // Sistema de Tradução / Translation System
+        const translations = {
+            pt: {
+                'header.title': '🚀 RELEX Workload Forecasting',
+                'header.subtitle': 'Business Case Executivo - Grupo Mateus S.A.',
+                'header.version': 'v3.0 Final - Análise Completa',
+                'header.date': 'Outubro 2025 | VA-GM-WLF | Confidencial',
+                'nav.summary': '📊 Resumo',
+                'nav.context': '🏢 Contexto',
+                'nav.pains': '❌ Dores',
+                'nav.solution': '✅ Solução',
+                'nav.financial': '💰 Financeiro',
+                'nav.requirements': '📋 Requisitos',
+                'nav.kpis': '📈 KPIs',
+                'nav.implementation': '🎯 Implementação',
+                'nav.decision': '✔️ Decisão',
+                // Section 0 - Summary
+                'section0.title': '📊 Resumo Executivo',
+                'section0.decision': 'Decisão Recomendada: APROVAÇÃO IMEDIATA',
+                'section0.scope': 'Implementação de RELEX Workload Forecasting em 276 lojas + 7 CDs',
+                'section0.description': 'Sistema de previsão de demanda por IA para otimização de escalas e produtividade operacional',
+                'section0.context.title': '📌 Contexto Estratégico',
+                'section0.context.text': 'O Grupo Mateus enfrenta crescimento acelerado (16+ lojas previstas em 2025) com processo 100% manual de planejamento de workforce. Esta ineficiência gera <strong>R$ 248-306M/ano em perdas</strong> por excesso de horas extras, ociosidade e baixa produtividade. RELEX oferece solução comprovada (200+ clientes) com ROI excepcional e risco técnico mínimo.',
+                'section0.value.title': '💎 Proposta de Valor',
+                'section0.metrics.savings': 'Economia 3 Anos',
+                'section0.metrics.conservative': 'Cenário Conservador (6%)',
+                'section0.metrics.roi': 'ROI Ano 1',
+                'section0.metrics.netprofit': 'R$ 177M lucro líquido',
+                'section0.metrics.payback': 'Payback',
+                'section0.metrics.ultrafast': 'Retorno ultra-rápido',
+                'section0.metrics.investment': 'Investimento Total',
+                'section0.metrics.3years': '3 anos (setup + licenças)',
+                'section0.benefits.title': '🎯 Principais Benefícios',
+                'section0.benefits.cost': '<strong>Redução 6-10% custo pessoal:</strong> R$ 187-312M/ano via otimização de escalas e produtividade',
+                'section0.benefits.automation': '<strong>Automação 80% do planejamento:</strong> De 17,5h para 4h/semana por loja (3.726h/sem economizadas)',
+                'section0.benefits.accuracy': '<strong>Precisão 90%+ nas previsões:</strong> vs 50-60% atual, reduzindo rupturas e sobrecarga',
+                'section0.benefits.visibility': '<strong>Visibilidade 100% dos setores:</strong> 8/8 áreas com métricas vs 1/8 atual (apenas caixas)',
+                'section0.benefits.advantage': '<strong>Early adopter advantage:</strong> 12-18 meses de vantagem vs Assaí, Carrefour, GPA',
+                'section0.status.title': '✅ Status da Análise:',
+                'section0.status.benchmarks': 'Benchmarks validados: Coop Värmland (6-10% redução), ICA Gruppen (8% redução)',
+                'section0.status.calculations': 'Cálculos auditáveis: Todos os números com metodologia transparente (ver seção Financeiro)',
+                'section0.status.requirements': 'Requisitos atendidos: 100% das necessidades mapeadas nas entrevistas',
+                'section0.status.risk': 'Risco técnico: Baixo - tecnologia madura, 200+ clientes, 95%+ uptime',
+                'section0.cta': 'Ver Decisão Completa →'
+            },
+            en: {
+                'header.title': '🚀 RELEX Workload Forecasting',
+                'header.subtitle': 'Executive Business Case - Grupo Mateus S.A.',
+                'header.version': 'v3.0 Final - Complete Analysis',
+                'header.date': 'October 2025 | VA-GM-WLF | Confidential',
+                'nav.summary': '📊 Summary',
+                'nav.context': '🏢 Context',
+                'nav.pains': '❌ Pain Points',
+                'nav.solution': '✅ Solution',
+                'nav.financial': '💰 Financial',
+                'nav.requirements': '📋 Requirements',
+                'nav.kpis': '📈 KPIs',
+                'nav.implementation': '🎯 Implementation',
+                'nav.decision': '✔️ Decision',
+                // Section 0 - Summary
+                'section0.title': '📊 Executive Summary',
+                'section0.decision': 'Recommended Decision: IMMEDIATE APPROVAL',
+                'section0.scope': 'Implementation of RELEX Workload Forecasting across 276 stores + 7 DCs',
+                'section0.description': 'AI-powered demand forecasting system for workforce scheduling and operational productivity optimization',
+                'section0.context.title': '📌 Strategic Context',
+                'section0.context.text': 'Grupo Mateus faces accelerated growth (16+ stores planned for 2025) with 100% manual workforce planning process. This inefficiency generates <strong>R$ 248-306M/year in losses</strong> from excessive overtime, idle time, and low productivity. RELEX offers a proven solution (200+ clients) with exceptional ROI and minimal technical risk.',
+                'section0.value.title': '💎 Value Proposition',
+                'section0.metrics.savings': '3-Year Savings',
+                'section0.metrics.conservative': 'Conservative Scenario (6%)',
+                'section0.metrics.roi': 'Year 1 ROI',
+                'section0.metrics.netprofit': 'R$ 177M net profit',
+                'section0.metrics.payback': 'Payback',
+                'section0.metrics.ultrafast': 'Ultra-fast return',
+                'section0.metrics.investment': 'Total Investment',
+                'section0.metrics.3years': '3 years (setup + licenses)',
+                'section0.benefits.title': '🎯 Key Benefits',
+                'section0.benefits.cost': '<strong>6-10% personnel cost reduction:</strong> R$ 187-312M/year through schedule and productivity optimization',
+                'section0.benefits.automation': '<strong>80% planning automation:</strong> From 17.5h to 4h/week per store (3,726h/week saved)',
+                'section0.benefits.accuracy': '<strong>90%+ forecast accuracy:</strong> vs 50-60% current, reducing stockouts and overload',
+                'section0.benefits.visibility': '<strong>100% department visibility:</strong> 8/8 areas with metrics vs 1/8 current (cashiers only)',
+                'section0.benefits.advantage': '<strong>Early adopter advantage:</strong> 12-18 months ahead of Assaí, Carrefour, GPA',
+                'section0.status.title': '✅ Analysis Status:',
+                'section0.status.benchmarks': 'Validated benchmarks: Coop Värmland (6-10% reduction), ICA Gruppen (8% reduction)',
+                'section0.status.calculations': 'Auditable calculations: All figures with transparent methodology (see Financial section)',
+                'section0.status.requirements': 'Requirements met: 100% of mapped needs from interviews',
+                'section0.status.risk': 'Technical risk: Low - mature technology, 200+ clients, 95%+ uptime',
+                'section0.cta': 'View Complete Decision →'
+            }
+        };
+
+        let currentLang = localStorage.getItem('preferredLanguage') || 'pt';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update language buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+            
+            // Update all translated elements (text only)
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update all translated elements (HTML content)
+            document.querySelectorAll('[data-i18n-html]').forEach(element => {
+                const key = element.getAttribute('data-i18n-html');
+                if (translations[lang] && translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+            
+            // Update content sections with language-specific class
+            document.documentElement.lang = lang;
+            document.body.classList.remove('lang-pt', 'lang-en');
+            document.body.classList.add(`lang-${lang}`);
+            
+            console.log(`%c🌐 Language changed to: ${lang.toUpperCase()}`, 'font-size:14px;color:#667eea;font-weight:bold');
+        }
+
+        // Initialize language system
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set initial language
+            setLanguage(currentLang);
+            
+            // Add language button listeners
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    setLanguage(this.dataset.lang);
+                });
+            });
+            
+            // Navigation buttons (existing code)
+            const navButtons = document.querySelectorAll('.nav-tabs button');
+            navButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const section = this.getAttribute('data-section');
+                    showSection(parseInt(section));
+                });
+            });
+
+            const ctaButtons = document.querySelectorAll('[data-goto]');
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const section = this.getAttribute('data-goto');
+                    showSection(parseInt(section));
+                });
+            });
+
+            document.addEventListener('keydown', function(e) {
+                const activeSection = document.querySelector('.content-section.active');
+                if (!activeSection) return;
+                
+                const currentIndex = parseInt(activeSection.getAttribute('data-section'));
+                const totalSections = document.querySelectorAll('.content-section').length;
+                
+                if (e.key === 'ArrowRight' && currentIndex < totalSections - 1) {
+                    showSection(currentIndex + 1);
+                } else if (e.key === 'ArrowLeft' && currentIndex > 0) {
+                    showSection(currentIndex - 1);
+                }
+            });
+        });
     </script>
 </body>
 </html>
